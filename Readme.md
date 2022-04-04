@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Даниил Малай](https://up.htmlacademy.ru/adaptive/25/user/1913865).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов](https://github.com/andreyCraftworkDesign).
 
 ---
 
