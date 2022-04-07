@@ -6,10 +6,10 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#" >
+      <a class="main-header__logo" href="#">
         <img class="main-header__logo-image" src="img/logo-1.svg" width="34" height="38" alt="Интернет-магазин Кэт Энерджи">
       </a>
-      <a class="main-header__logo-text" href="#" >
+      <a class="main-header__logo-text" href="#">
         <img class="main-header__logo-text-image" src="img/logo-2.svg" width="101" height="18" alt="Логотип Кэт Энерджи">
       </a>
       <nav class="main-nav">
@@ -19,10 +19,10 @@
             <a href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
+            <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -97,32 +97,39 @@
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
         <table class="example__results results">
-          <thead class="example__results-head">
+          <thead class="results-head">
             <tr>
               <th>Снижение веса</th>
               <th>Затрачено времени</th>
             </tr>
           </thead>
-          <tbody class="example__results-body">
+          <tbody class="results-body">
             <tr>
-              <th>5 кг</th>
-              <th>60 дней</th>
+              <td>5 кг</td>
+              <td>60 дней</td>
             </tr>
           </tbody>
         </table>
         <p class="example__price">
           Затраты на питание: 15 000 РУБ.
         </p>
-        <div class="example__comparison">
-          <img class="example__img-before" src="img/cat-before.png" alt="Полная кошка">
-          <img class="example__img-after" src="img/cat-after.png" alt="Худая кошка">
-          <div class="example__rangebar rangebar">
-          <span class="rangebar__description">
-            Было
-          </span>
-          <span class="rangebar__description">
-            Стало
-          </span>
+        <div class="example__comparison slider">
+          <div class="slider__wrapper">
+            <div class="slider__slide">
+              <img class="slider__content" src="img/cat-before.png" alt="Полная кошка">
+            </div>
+            <div class="slider__slide">
+              <img class="slider__content" src="img/cat-after.png" alt="Худая кошка">
+            </div>
+            <div class="slider__rangebar rangebar">
+              <span class="rangebar__description">
+                Было
+              </span>
+              <div class="slider__controls"></div>
+              <span class="rangebar__description">
+                Стало
+              </span>
+            </div>
           </div>
         </div>
       </section>
