@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
+
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#" >
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo-1.svg" width="34" height="38" alt="Интернет-магазин Кэт Энерджи">
       </a>
-      <a class="main-header__logo-text" href="#" >
+      <a class="main-header__logo-text" href="#">
         <img class="main-header__logo-text-image" src="img/logo-2.svg" width="101" height="18" alt="Логотип Кэт Энерджи">
       </a>
       <nav class="main-nav">
@@ -31,11 +33,11 @@
       <h1 class="main-catalog__title">
         Каталог продукции
       </h1>
-      <section class="catalog">
-        <section class="catalog__basic">
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <div class="catalog__card card">
+      <section class="product-catalog">
+        <section class="product-catalog__basic">
+          <ul class="product-catalog__list">
+            <li class="product-catalog__item">
+              <div class="product-catalog__card card">
                 <img class="card__image" src="img/catalog/product-1.png" alt="Товар">
                 <h3 class="card__title">
                   Cat Energy PRO 500 г
@@ -56,11 +58,11 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link" href="#">Заказать</a>
+                <a class="card__link order-link" href="#">Заказать</a>
               </div>
             </li>
-            <li class="catalog__item">
-              <div class="catalog__card card">
+            <li class="product-catalog__item">
+              <div class="product-catalog__card card">
                 <img class="card__image" src="img/catalog/product-2.png" alt="Товар">
                 <h3 class="card__title">
                   Cat Energy PRO 1000 г
@@ -81,11 +83,11 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link" href="#">Заказать</a>
+                <a class="card__link order-link" href="#">Заказать</a>
               </div>
             </li>
-            <li class="catalog__item">
-              <div class="catalog__card card">
+            <li class="product-catalog__item">
+              <div class="product-catalog__card card">
                 <img class="card__image" src="img/catalog/product-3.png" alt="Товар">
                 <h3 class="card__title">
                   Cat Energy PRO 500 г
@@ -106,11 +108,11 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link" href="#">Заказать</a>
+                <a class="card__link order-link" href="#">Заказать</a>
               </div>
             </li>
-            <li class="catalog__item">
-              <div class="catalog__card card">
+            <li class="product-catalog__item">
+              <div class="product-catalog__card card">
                 <img class="card__image" src="img/catalog/product-4.png" alt="Товар">
                 <h3 class="card__title">
                   Cat Energy PRO 1000 г
@@ -131,11 +133,11 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link" href="#">Заказать</a>
+                <a class="card__link order-link" href="#">Заказать</a>
               </div>
             </li>
-            <li class="catalog__item">
-              <div class="catalog__card card">
+            <li class="product-catalog__item">
+              <div class="product-catalog__card card">
                 <img class="card__image" src="img/catalog/product-5.png" alt="Товар">
                 <h3 class="card__title">
                   Cat Energy SLIM 500 г
@@ -156,11 +158,11 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link" href="#">Заказать</a>
+                <a class="card__link order-link" href="#">Заказать</a>
               </div>
             </li>
-            <li class="catalog__item">
-              <div class="catalog__card card">
+            <li class="product-catalog__item">
+              <div class="product-catalog__card card">
                 <img class="card__image" src="img/catalog/product-6.png" alt="Товар">
                 <h3 class="card__title">
                   Cat Energy SLIM 1000 г
@@ -181,11 +183,11 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link" href="#">Заказать</a>
+                <a class="card__link order-link" href="#">Заказать</a>
               </div>
             </li>
-            <li class="catalog__item">
-              <div class="catalog__card card">
+            <li class="product-catalog__item">
+              <div class="product-catalog__card card">
                 <img class="card__image" src="img/catalog/product-7.png" alt="Товар">
                 <h3 class="card__title">
                   Cat Energy SLIM 500 г
@@ -206,27 +208,27 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link" href="#">Заказать</a>
+                <a class="card__link order-link" href="#">Заказать</a>
               </div>
             </li>
           </ul>
-          <div class="catalog__load-more load-more">
+          <div class="product-catalog__load-more load-more">
             <b class="load-more__title">Показать еще 100500 товаров</b>
             <p class="load-more__description">На самом деле вкусов гораздо больше!</p>
             <button class="load-more__button" type="button">Показать все</button>
           </div>
         </section>
-        <section class="catalog__additional">
-          <h2 class="catalog__subtitle">
+        <section class="product-catalog__additional">
+          <h2 class="product-catalog__subtitle">
             Дополнительные товары
           </h2>
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <div class="catalog__card card--additional">
-                <h3 class="card__title">
+          <ul class="product-catalog__list">
+            <li class="product-catalog__item">
+              <div class="product-catalog__card card-additional">
+                <h3 class="card-additional__title">
                   Сахарозаменитель
                 </h3>
-                <table class="card__table product-description">
+                <table class="card-additional__table product-description">
                   <tbody class="product-description__body">
                     <tr>
                       <td>1 упаковка (100 г)</td>
@@ -234,15 +236,15 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link" href="#">Заказать</a>
+                <a class="card-additional__link order-link" href="#">Заказать</a>
               </div>
             </li>
-            <li class="catalog__item">
-              <div class="catalog__card card--additional">
-                <h3 class="card__title">
+            <li class="product-catalog__item">
+              <div class="product-catalog__card card-additional">
+                <h3 class="card-additional__title">
                   Питьевая вода
                 </h3>
-                <table class="card__table product-description">
+                <table class="card-additional__table product-description">
                   <tbody class="product-description__body">
                     <tr>
                       <td>5 литров</td>
@@ -250,15 +252,15 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link" href="#">Заказать</a>
+                <a class="card-additional__link order-link" href="#">Заказать</a>
               </div>
             </li>
-            <li class="catalog__item">
-              <div class="catalog__card card--additional">
-                <h3 class="card__title">
+            <li class="product-catalog__item">
+              <div class="product-catalog__card card-additional">
+                <h3 class="card-additional__title">
                   Молоко
                 </h3>
-                <table class="card__table product-description">
+                <table class="card-additional__table product-description">
                   <tbody class="product-description__body">
                     <tr>
                       <td>1 литр</td>
@@ -266,15 +268,15 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link" href="#">Заказать</a>
+                <a class="card-additional__link order-link" href="#">Заказать</a>
               </div>
             </li>
-            <li class="catalog__item">
-              <div class="catalog__card card--additional">
-                <h3 class="card__title">
+            <li class="product-catalog__item">
+              <div class="product-catalog__card card-additional">
+                <h3 class="card-additional__title">
                   Витамины
                 </h3>
-                <table class="card__table product-description">
+                <table class="card-additional__table product-description">
                   <tbody class="product-description__body">
                     <tr>
                       <td>1 упаковка (30 г)</td>
@@ -282,7 +284,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link" href="#">Заказать</a>
+                <a class="card-additional__link order-link" href="#">Заказать</a>
               </div>
             </li>
           </ul>
@@ -301,7 +303,7 @@
           Приглашаем к сотрудничеству дилеров!
         </p>
         <address class="cooperation__adress">
-          ул. Большая  Конюшенная, д. 19/8 Санкт-Петербург
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </address>
       </aside>
       <section class="map"> <!--Пока не знаю как это правильно делается, на этом этапе пока сделал так-->
@@ -323,21 +325,21 @@
           </p>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" >
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
                 <span class="vissualy-hidden">
                   Вконтакте
                 </span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" >
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="vissualy-hidden">
                   Ютуб
                 </span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" >
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="vissualy-hidden">
                   Телеграм
                 </span>
@@ -358,4 +360,5 @@
       </footer>
     </main>
   </body>
+
 </html>
