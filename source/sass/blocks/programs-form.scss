@@ -1,0 +1,85 @@
+@use "../variables.scss" as v;
+
+@mixin text-style() {
+  font-family: "Oswald", system-ui;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: v.$special-text;
+}
+
+.programs-form__fieldset {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  border: 0;
+}
+
+.programs-form__field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.programs-form__field-label {
+  margin-right: 13px;
+
+  white-space: nowrap;
+
+  @include text-style();
+
+  &--radio {
+    color: #222222;
+  }
+
+  &--checkbox {
+    color: v.$black;
+  }
+}
+
+.programs-form__field-control {
+  width: 100%;
+  height: 45px;
+  align-self: flex-end;
+
+  &::placeholder {
+    @include text-style();
+  }
+}
+
+.programs-form__legend {
+  display: block;
+  width: 60%;
+  margin-bottom: 35px;
+  padding: 0;
+
+  font-family: "Oswald", system-ui;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.programs-form__field-textarea {
+  width: 100%;
+  height: 150px;
+
+  &::placeholder {
+    @include text-style();
+  }
+}
+
+.programs-form__field-send {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 21px;
+  padding: 0;
+
+  border: 0;
+
+  font-family: "Oswald", system-ui;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: v.$white;
+  background-color: v.$basic-color;
+}

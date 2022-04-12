@@ -1,0 +1,26 @@
+@use "../variables.scss" as v;
+
+.cooperation {
+  display: flex;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.cooperation--dark {
+  background-color: #f2f2f2;
+}
+
+.cooperation__description {
+  margin: 0;
+
+  font-family: "Oswald", system-ui;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.cooperation__address {
+  line-height: 20px;
+  color: v.$special-text;
+}

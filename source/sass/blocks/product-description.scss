@@ -1,0 +1,18 @@
+@use "../variables.scss" as v;
+
+.product-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: v.$special-text;
+}
+
+.product-description__body {
+  th {
+    font-weight: inherit;
+  }
+
+  td {
+    text-align: right;
+  }
+}

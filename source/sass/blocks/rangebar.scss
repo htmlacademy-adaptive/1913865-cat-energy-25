@@ -1,0 +1,12 @@
+.rangebar {
+  display: flex;
+}
+
+.rangebar__description {
+  display: block;
+
+  font-family: "Oswald", system-ui;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

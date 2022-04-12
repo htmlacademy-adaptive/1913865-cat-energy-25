@@ -1,0 +1,33 @@
+@use "../variables.scss" as v;
+
+.main-nav {
+  position: relative;
+  z-index: 1;
+
+  &:hover .main-nav__list {
+    display: block;
+    background-color: v.$white;
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+  display: none;
+  list-style: none;
+}
+
+.main-nav__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  font-family: "Oswald", system-ui;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: v.$black;
+
+  a {
+    color: inherit;
+  }
+}
