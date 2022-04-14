@@ -11,10 +11,7 @@
 }
 
 .guide__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include v.list-reset();
 }
 
 .guide__item {
@@ -34,19 +31,19 @@
     background-position: center;
   }
 
-  &--1::before {
+  &--leaf::before {
     background-image: url("../../img/icon-leaf.svg");
   }
 
-  &--2::before {
+  &--tube::before {
     background-image: url("../../img/icon-tube.svg");
   }
 
-  &--3::before {
+  &--eat::before {
     background-image: url("../../img/icon-eat.svg");
   }
 
-  &--4::before {
+  &--alarm::before {
     background-image: url("../../img/icon-alarm.svg");
   }
 }

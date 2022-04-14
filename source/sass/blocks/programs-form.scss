@@ -1,13 +1,5 @@
 @use "../variables.scss" as v;
 
-@mixin text-style() {
-  font-family: "Oswald", system-ui;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: v.$special-text;
-}
-
 .programs-form__fieldset {
   margin: 0;
   margin-bottom: 10px;
@@ -26,7 +18,7 @@
 
   white-space: nowrap;
 
-  @include text-style();
+  @include v.programs-form-text-style();
 
   &--radio {
     color: #222222;
@@ -39,11 +31,11 @@
 
 .programs-form__field-control {
   width: 100%;
-  height: 45px;
+  min-height: 45px;
   align-self: flex-end;
 
   &::placeholder {
-    @include text-style();
+    @include v.programs-form-text-style();
   }
 }
 
@@ -61,16 +53,16 @@
 
 .programs-form__field-textarea {
   width: 100%;
-  height: 150px;
+  min-height: 150px;
 
   &::placeholder {
-    @include text-style();
+    @include v.programs-form-text-style();
   }
 }
 
 .programs-form__field-send {
   width: 100%;
-  height: 40px;
+  min-height: 40px;
   margin-bottom: 21px;
   padding: 0;
 

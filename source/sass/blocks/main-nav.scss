@@ -11,9 +11,9 @@
 }
 
 .main-nav__list {
-  padding: 0;
   display: none;
-  list-style: none;
+
+  @include v.list-reset();
 }
 
 .main-nav__item {

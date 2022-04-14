@@ -5,7 +5,7 @@
   padding: 1px;
 
   width: 280px;
-  height: 290px;
+  min-height: 290px;
   background-color: v.$basic-color;
   background-image: linear-gradient(to top, v.$basic-color, v.$basic-color), url("../../img/gift-cat.jpg");
 

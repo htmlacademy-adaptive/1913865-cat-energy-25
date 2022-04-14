@@ -1,7 +1,7 @@
+@use "../variables.scss" as v;
+
 .product-catalog__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include v.list-reset();
 }
 
 .product-catalog__subtitle {
