@@ -1,0 +1,10 @@
+@use "../variables.scss" as v;
+
+.product-catalog__list {
+  @include v.list-reset();
+}
+
+.product-catalog__subtitle {
+  margin-top: 25px;
+  margin-bottom: 36px;
+}

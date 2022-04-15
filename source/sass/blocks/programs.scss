@@ -1,0 +1,41 @@
+@use "../variables.scss" as v;
+
+.programs__inner {
+  width: 320px;
+  min-height: 302px;
+  padding-top: 27px;
+
+  background-image: linear-gradient(to top, rgba(v.$basic-color, 0.85), rgba(v.$basic-color, 0.85)), url("../../img/main-background-cat.jpg");
+  background-repeat: no-repeat;
+  background-color: v.$basic-color;
+}
+
+.programs__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-family: "Oswald", system-ui;
+  font-size: 36px;
+  line-height: 36px;
+  color: v.$white;
+}
+
+.programs__slogan {
+  margin: 0 auto;
+
+  font-family: "Oswald", system-ui;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: v.$white;
+}
+
+.programs__link {
+  display: block;
+  margin-bottom: 20px;
+  background-color: v.$basic-color;
+
+  font-family: "Oswald", system-ui;
+  text-transform: uppercase;
+  color: v.$white;
+}

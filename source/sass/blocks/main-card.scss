@@ -1,0 +1,38 @@
+@use "../variables.scss" as v;
+
+.main-card {
+  margin-bottom: 20px;
+  padding: 21px 0;
+  background-color: v.$secondary-color;
+}
+
+.main-card__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: "Oswald", system-ui;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  color: v.$black;
+}
+
+.main-card__description {
+  margin: 0;
+  margin-bottom: 42px;
+
+  font-family: "Arial", system-ui;
+  color: v.$special-text;
+}
+
+.main-card__link {
+  display: block;
+
+  font-family: "Oswald", system-ui;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: v.$black;
+}

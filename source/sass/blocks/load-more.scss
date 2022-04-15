@@ -1,0 +1,47 @@
+@use "../variables.scss" as v;
+
+.load-more {
+  padding: 25px 0;
+}
+
+.load-more__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+
+  font-family: "Oswald", system-ui;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.load-more__description {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 21px;
+
+  font-family: "Arial", system-ui;
+  font-size: 12px;
+  line-height: 16px;
+  color: v.$special-text;
+}
+
+.load-more__button {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+
+  border: 0;
+  cursor: pointer;
+
+  font-family: "Oswald", system-ui;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: v.$special-text;
+  background-color: #f2f2f2;
+}

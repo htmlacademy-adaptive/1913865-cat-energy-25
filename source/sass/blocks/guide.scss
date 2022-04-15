@@ -1,0 +1,49 @@
+@use "../variables.scss" as v;
+
+.guide__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-family: "Oswald", system-ui;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.guide__list {
+  @include v.list-reset();
+}
+
+.guide__item {
+  display: flex;
+  color: v.$special-text;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-right: 20px;
+
+    background-color: v.$basic-color;
+    background-position: center;
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/icon-leaf.svg");
+  }
+
+  &--tube::before {
+    background-image: url("../../img/icon-tube.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../../img/icon-eat.svg");
+  }
+
+  &--alarm::before {
+    background-image: url("../../img/icon-alarm.svg");
+  }
+}
