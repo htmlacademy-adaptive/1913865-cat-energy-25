@@ -1,9 +1,12 @@
 @use "../variables.scss" as v;
 
 .main-card {
-  margin-bottom: 20px;
-  padding: 21px 0;
+  padding: 21px 33px 21px 20px;
   background-color: v.$secondary-color;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 77px 60px 57px 52px;
+  }
 }
 
 .main-card__title {
@@ -17,6 +20,19 @@
   text-transform: uppercase;
 
   color: v.$black;
+
+  @media (min-width: v.$tablet-width) {
+    width: 55%;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: auto;
+    margin-bottom: 73px;
+    text-align: center;
+  }
 }
 
 .main-card__description {
@@ -25,6 +41,19 @@
 
   font-family: "Arial", system-ui;
   color: v.$special-text;
+
+  @media (min-width: v.$tablet-width) {
+    width: 55%;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: v.$black;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 100%;
+    margin-bottom: 27px;
+  }
 }
 
 .main-card__link {
@@ -35,4 +64,11 @@
   line-height: 16px;
   text-transform: uppercase;
   color: v.$black;
+
+  @media (min-width: v.$tablet-width) {
+    width: 55%;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

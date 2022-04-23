@@ -1,4 +1,27 @@
+@use "../variables.scss" as v;
+
 .main-header {
   display: flex;
+
+  @include v.page-margin;
   margin-bottom: 24px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.main-header__logo {
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+.main-header__logo-text {
+  margin-right: auto;
+  padding-top: 22px;
+  padding-bottom: 24px;
 }

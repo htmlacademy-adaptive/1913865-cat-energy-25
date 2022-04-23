@@ -1,8 +1,41 @@
-// .main-container {
-//   margin: 0 auto;
-//   width: 87.5%;
-// }
+@use "../variables.scss" as v;
+
+.main-container {
+  position: relative;
+}
 
 .main-container__guide {
+  @include v.page-margin;
   margin-bottom: 50px;
+}
+
+.main-container__example {
+  padding: 0 v.$mobile-side-indent;
+  padding-top: 25px;
+
+  @media (min-width: v.$desktop-width) {
+    padding: 0 v.$desktop-side-indent;
+  }
+}
+
+.main-container__programs {
+  @media (min-width: v.$tablet-width) {
+    margin: 0 v.$tablet-side-indent;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin: 0 v.$desktop-side-indent;
+    margin-bottom: 40px;
+  }
+}
+
+.main-container__cooperation {
+  @media (min-width: v.$desktop-width) {
+    position: absolute;
+    left: v.$desktop-side-indent;
+    bottom: 107px;
+    background-color: v.$white;
+    z-index: 1;
+  }
 }

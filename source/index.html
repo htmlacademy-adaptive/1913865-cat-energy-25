@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="./css/style.css" rel="stylesheet">
   </head>
@@ -18,7 +19,7 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="vissually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--current">
             <a href="#">Главная</a>
           </li>
           <li class="main-nav__item">
@@ -34,7 +35,7 @@
       <h1 class="vissually-hidden">
         Интернет-магазин питания для котов "Кэт энерджи"
       </h1>
-      <section class="programs">
+      <section class="main-container__programs programs">
         <div class="programs__inner">
           <h2 class="vissually-hidden">
             Программы
@@ -47,33 +48,35 @@
           </p>
         </div>
         <img class="programs__image" src="img/main-can.png" alt="Питание для котов">
-          <a class="programs__link" href="#">
-            Подобрать программу
-          </a>
-        <div class="main-card main-card--weight-loss">
-          <h3 class="main-card__title">
-            Похудение
-          </h3>
-          <p class="main-card__description">
-            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
-            Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-          </p>
-          <a class="main-card__link" href="#">
-            Каталог SLIM
-          </a>
-        </div>
-        <div class="main-card main-card--weight-gain">
-          <h3 class="main-card__title">
-            Набор массы
-          </h3>
-          <p class="main-card__description">
-            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-          </p>
-          <a class="main-card__link" href="#">
-            Каталог PRO
-          </a>
-        </div>
+        <a class="programs__link" href="#">
+          <span class="programs__link-content">Подобрать программу</span>
+        </a>
+        <ul class="programs__cards-list">
+          <li class="programs__main-card main-card main-card--weight-loss">
+            <h3 class="main-card__title">
+              Похудение
+            </h3>
+            <p class="main-card__description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
+              Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <a class="main-card__link" href="#">
+              Каталог SLIM
+            </a>
+          </li>
+          <li class="programs__main-card main-card main-card--weight-gain">
+            <h3 class="main-card__title">
+              Набор массы
+            </h3>
+            <p class="main-card__description">
+              Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="main-card__link" href="#">
+              Каталог PRO
+            </a>
+          </li>
+        </ul>
       </section>
       <section class="main-container__guide guide">
         <h2 class="guide__title">
@@ -105,14 +108,14 @@
         <table class="example__results results">
           <thead class="results__head">
             <tr>
-              <th>Снижение веса</th>
-              <th>Затрачено времени</th>
+              <th class="results__cell">Снижение веса</th>
+              <th class="results__cell">Затрачено времени</th>
             </tr>
           </thead>
           <tbody class="results__body">
             <tr>
-              <td>5 кг</td>
-              <td>60 дней</td>
+              <td class="results__cell">5 кг</td>
+              <td class="results__cell">60 дней</td>
             </tr>
           </tbody>
         </table>
@@ -139,7 +142,7 @@
           </div>
         </div>
       </section>
-      <aside class="cooperation">
+      <aside class="main-container__cooperation cooperation">
         <h2 class="vissually-hidden">
           Сотрудничество
         </h2>

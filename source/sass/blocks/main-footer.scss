@@ -1,4 +1,7 @@
+@use "../variables.scss" as v;
+
 .main-footer {
+  @include v.page-margin;
   margin-top: auto;
 }
 

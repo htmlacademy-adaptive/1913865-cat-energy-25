@@ -1,3 +1,5 @@
+@use "../variables.scss" as v;
+
 .rangebar {
   display: flex;
 }
@@ -9,4 +11,9 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

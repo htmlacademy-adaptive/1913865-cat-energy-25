@@ -1,13 +1,44 @@
 @use "../variables.scss" as v;
 
+$programs-side-indent: 87px;
+
+.programs {
+  @media (min-width: v.$tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
 .programs__inner {
   width: 320px;
   min-height: 302px;
+  padding: 0 v.$mobile-side-indent;
   padding-top: 27px;
+  margin: 0 auto;
 
   background-image: linear-gradient(to top, rgba(v.$basic-color, 0.85), rgba(v.$basic-color, 0.85)), url("../../img/main-background-cat.jpg");
   background-repeat: no-repeat;
   background-color: v.$basic-color;
+
+  color: v.$white;
+
+  @media (min-width: v.$tablet-width) {
+    width: auto;
+    min-height: 0;
+    padding: 0;
+    margin-left: $programs-side-indent;
+    margin-bottom: 49px;
+    order: -2;
+
+    background: initial;
+    color: v.$black;
+  }
 }
 
 .programs__title {
@@ -17,7 +48,18 @@
   font-family: "Oswald", system-ui;
   font-size: 36px;
   line-height: 36px;
-  color: v.$white;
+
+  @media (min-width: v.$tablet-width) {
+    width: 420px;
+    margin-bottom: 41px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 100%;
+  }
 }
 
 .programs__slogan {
@@ -27,15 +69,81 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: v.$white;
+
+  @media (min-width: v.$tablet-width) {
+    width: 420px;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.programs__image {
+  display: block;
+  width: 280px;
+  height: 270px;
+  margin: 0 auto;
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    grid-column: 2/-1;
+    grid-row: 1/3;
+    margin-bottom: 136px;
+  }
 }
 
 .programs__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
-  background-color: v.$basic-color;
+  min-height: 40px;
 
+  background-color: v.$basic-color;
   font-family: "Oswald", system-ui;
   text-transform: uppercase;
   color: v.$white;
+
+  @media (min-width: v.$tablet-width) {
+    width: max-content;
+    min-height: 54px;
+    margin-left: $programs-side-indent;
+
+    order: -1;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    align-self: start;
+  }
+}
+
+.programs__link-content {
+  padding: 7px 8px;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 14px 16px;
+  }
+}
+
+.programs__cards-list {
+  @include v.list-reset;
+
+  @media (min-width: v.$desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    grid-column: 1/-1;
+  }
+}
+
+.programs__main-card {
+  margin-bottom: 20px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 30px;
+  }
 }

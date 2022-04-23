@@ -2,7 +2,19 @@
 
 .example {
   background-color: #eaeaea;
-  padding-top: 25px;
+
+  @media (min-width: v.$tablet-width) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    background: linear-gradient(to bottom, #ffffff 60%, #eaeaea 60%);
+  }
+
+  @media (min-width: v.$desktop-width) {
+    grid-template-columns: 4fr 5fr;
+
+    background: linear-gradient(to bottom, #ffffff 25%, #eaeaea 25%);
+  }
 }
 
 .example__title {
@@ -13,6 +25,19 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: v.$tablet-width) {
+    grid-column: 1/-1;
+    margin-bottom: 63px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    grid-column: auto;
+    margin-bottom: 146px;
+  }
 }
 
 .example__description {
@@ -20,8 +45,70 @@
   margin-bottom: 20px;
 
   color: v.$special-text;
+
+  @media (min-width: v.$tablet-width) {
+    grid-column: 1/-1;
+    margin-bottom: 54px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    grid-column: auto;
+    margin-bottom: 69px;
+  }
 }
 
 .example__results {
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 20px;
+
+  @media (min-width: v.$tablet-width) {
+    width: 50%;
+    margin: 0;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+.example__price {
+  display: block;
+  margin-bottom: 40px;
+
+  font-family: "Oswald", system-ui;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 0;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 75px;
+    text-align: start;
+  }
+}
+
+.example__comparison {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+
+  @media (min-width: v.$tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    grid-column: 2/-1;
+    grid-row: 1/5;
+  }
 }

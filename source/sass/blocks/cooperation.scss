@@ -2,8 +2,18 @@
 
 .cooperation {
   display: flex;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 26px v.$mobile-side-indent;
+  justify-content: space-between;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 56px 70px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 565px;
+    min-height: 198px;
+    padding: 56px 80px;
+  }
 }
 
 .cooperation--dark {
@@ -18,9 +28,18 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .cooperation__address {
   line-height: 20px;
   color: v.$special-text;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 16px;
+  }
 }
