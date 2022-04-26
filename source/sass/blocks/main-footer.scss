@@ -1,8 +1,38 @@
 @use "../variables.scss" as v;
 
 .main-footer {
-  @include v.page-margin;
+  padding: 0 v.$mobile-side-indent;
   margin-top: auto;
+  padding-top: 39px;
+  padding-bottom: 22px;
+
+  background-color: v.$secondary-color;
+
+  @media (min-width: v.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 v.$tablet-side-indent;
+    padding-top: 58px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 0 v.$desktop-side-indent;
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
+}
+
+.main-footer__logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__copyright {
