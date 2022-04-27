@@ -1,19 +1,23 @@
 @use "../variables.scss" as v;
 
 .main-nav {
-  position: relative;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/-1;
 
-  &:hover .main-nav__list {
-    display: block;
-    background-color: v.$white;
+  @media (min-width: v.$desktop-width) {
+    max-width: 550px;
   }
 }
 
 .main-nav__list {
-  display: none;
-
   @include v.list-reset();
+
+  @media (min-width: v.$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
 }
 
 .main-nav__item {
@@ -25,9 +29,28 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: v.$black;
 
   a {
     color: inherit;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    font-weight: 400;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    color: v.$white;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: v.$mobile-side-indent;
+  top: 24px;
+
+  @media (min-width: v.$tablet-width) {
+    display: none;
   }
 }

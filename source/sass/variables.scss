@@ -4,6 +4,14 @@ $white: #ffffff;
 $black: #000000;
 $special-text: #444444;
 
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+//Containers indent
+$mobile-side-indent: 20px;
+$tablet-side-indent: 30px;
+$desktop-side-indent: 110px;
+
 @mixin programs-form-text-style() {
   font-family: "Oswald", system-ui;
   font-size: 16px;
@@ -16,4 +24,16 @@ $special-text: #444444;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin page-margin {
+  margin: 0 $mobile-side-indent;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 $tablet-side-indent;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 $desktop-side-indent;
+  }
 }
