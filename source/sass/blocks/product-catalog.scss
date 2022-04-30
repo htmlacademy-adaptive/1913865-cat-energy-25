@@ -1,10 +1,87 @@
 @use "../variables.scss" as v;
 
+.product-catalog {
+  @include v.page-margin;
+}
+
+.product-catalog__additional {
+  @media (min-width: v.$desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 80px;
+    margin-bottom: 86px;
+  }
+}
+
+.product-catalog__card {
+  @media (min-width: v.$tablet-width) {
+    $product-catalog__card-margin: 141px;
+    margin-top: $product-catalog__card-margin;
+    height: calc(100% - $product-catalog__card-margin);
+  }
+
+  @media (min-width: v.$desktop-width) {
+    $product-catalog__card-margin: 143px;
+    margin-top: $product-catalog__card-margin;
+    height: calc(100% - $product-catalog__card-margin);
+  }
+}
+
+.product-catalog__load-more {
+  @media (min-width: v.$tablet-width) {
+    $product-catalog__card-margin: 141px;
+    margin-top: $product-catalog__card-margin;
+    height: calc(100% - $product-catalog__card-margin);
+  }
+
+  @media (min-width: v.$tablet-width) {
+    $product-catalog__card-margin: 143px;
+    margin-top: $product-catalog__card-margin;
+    height: calc(100% - $product-catalog__card-margin);
+  }
+}
+
 .product-catalog__list {
   @include v.list-reset();
+
+  @media (min-width: v.$tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 60px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 80px;
+  }
+}
+
+.product-catalog__list-additional {
+  @include v.list-reset();
+  grid-column: 1/-2;
 }
 
 .product-catalog__subtitle {
+  grid-column: 1/-1;
   margin-top: 25px;
   margin-bottom: 36px;
+
+  font-family: "Oswald", system-ui;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-top: 68px;
+    margin-bottom: 80px;
+    margin-left: 38px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-top: 75px;
+    margin-left: 0;
+  }
 }

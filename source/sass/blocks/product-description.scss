@@ -1,18 +1,39 @@
 @use "../variables.scss" as v;
 
 .product-description {
-  font-size: 12px;
   font-weight: 400;
-  line-height: 16px;
   color: v.$special-text;
+
+  @media (min-width: v.$tablet-width) {
+    border-spacing: 0;
+  }
 }
 
 .product-description__body {
   th {
     font-weight: inherit;
+
+    @media (min-width: v.$desktop-width) {
+      text-align: left;
+    }
   }
 
   td {
     text-align: right;
+  }
+
+  tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.product-description__cell {
+  @media (min-width: v.$tablet-width) {
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 36px;
+    border: 0;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
