@@ -15,29 +15,29 @@
 
 .product-catalog__card {
   @media (min-width: v.$tablet-width) {
-    $product-catalog__card-margin: 141px;
+    $product-catalog__card-margin: 145px;
     margin-top: $product-catalog__card-margin;
-    height: calc(100% - $product-catalog__card-margin);
+    min-height: calc(100% - $product-catalog__card-margin);
   }
 
   @media (min-width: v.$desktop-width) {
-    $product-catalog__card-margin: 143px;
+    $product-catalog__card-margin: 145px;
     margin-top: $product-catalog__card-margin;
-    height: calc(100% - $product-catalog__card-margin);
+    min-height: calc(100% - $product-catalog__card-margin);
   }
 }
 
 .product-catalog__load-more {
   @media (min-width: v.$tablet-width) {
-    $product-catalog__card-margin: 141px;
+    $product-catalog__card-margin: 145px;
     margin-top: $product-catalog__card-margin;
-    height: calc(100% - $product-catalog__card-margin);
+    min-height: calc(100% - $product-catalog__card-margin);
   }
 
   @media (min-width: v.$tablet-width) {
-    $product-catalog__card-margin: 143px;
+    $product-catalog__card-margin: 145px;
     margin-top: $product-catalog__card-margin;
-    height: calc(100% - $product-catalog__card-margin);
+    min-height: calc(100% - $product-catalog__card-margin);
   }
 }
 
