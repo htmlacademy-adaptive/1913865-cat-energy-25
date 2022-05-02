@@ -39,7 +39,9 @@
   @media (min-width: v.$tablet-width) {
     font-weight: 400;
   }
+}
 
+.main-nav__item--index {
   @media (min-width: v.$desktop-width) {
     color: v.$white;
   }

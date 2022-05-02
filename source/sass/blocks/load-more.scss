@@ -2,6 +2,19 @@
 
 .load-more {
   padding: 25px 0;
+
+  @media (min-width: v.$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 38px;
+    padding-right: 37px;
+
+    border: 2px solid v.$secondary-color;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 38px;
+  }
 }
 
 .load-more__title {
@@ -16,6 +29,22 @@
 
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0 54px;
+    margin-top: 136px;
+    margin-bottom: 23px;
+
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 160px;
+  }
 }
 
 .load-more__description {
@@ -28,6 +57,15 @@
   font-size: 12px;
   line-height: 16px;
   color: v.$special-text;
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0 40px;
+    text-align: center;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin: 0;
+  }
 }
 
 .load-more__button {
@@ -44,4 +82,8 @@
   text-transform: uppercase;
   color: v.$special-text;
   background-color: #f2f2f2;
+
+  @media (min-width: v.$tablet-width) {
+    margin-top: auto;
+  }
 }

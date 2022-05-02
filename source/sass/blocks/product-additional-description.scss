@@ -1,0 +1,27 @@
+@use "../variables.scss" as v;
+
+.product-additional-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: v.$special-text;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.product-additional-description__body {
+  th {
+    font-weight: inherit;
+
+    @media (min-width: v.$desktop-width) {
+      text-align: left;
+    }
+  }
+
+  td {
+    text-align: right;
+  }
+}
