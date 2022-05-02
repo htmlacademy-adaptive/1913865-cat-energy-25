@@ -1,4 +1,14 @@
+@use "../variables.scss" as v;
+
+.main-catalog {
+  @media (min-width: v.$desktop-width) {
+    position: relative;
+  }
+}
+
 .main-catalog__title {
+  @include v.page-margin;
+
   margin-top: 27px;
   margin-bottom: 40px;
 
@@ -6,4 +16,20 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 22px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.main-catalog__cooperation {
+  @media (min-width: v.$desktop-width) {
+    position: absolute;
+    left: v.$desktop-side-indent;
+    bottom: 107px;
+    z-index: 1;
+  }
 }

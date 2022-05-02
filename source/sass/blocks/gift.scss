@@ -1,13 +1,40 @@
 @use "../variables.scss" as v;
 
 .gift {
-  margin: 35px 0;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
   padding: 1px;
 
   width: 280px;
   min-height: 290px;
   background-color: v.$basic-color;
   background-image: linear-gradient(to top, v.$basic-color, v.$basic-color), url("../../img/gift-cat.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-width: v.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 69px;
+    margin-bottom: 76px;
+    width: 100%;
+    min-height: 200px;
+    padding: 57px 124px 60px 77px;
+
+    background-position: center;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-size: 125%;
+  }
 
   &::before {
     content: "";
@@ -20,6 +47,18 @@
 
     background-image: url("../../img/icon-gift.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: v.$tablet-width) {
+      width: 80px;
+      height: 82px;
+      margin: 0;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      margin: 0 auto;
+      margin-top: 59px;
+      margin-bottom: 48px;
+    }
   }
 }
 
@@ -34,4 +73,16 @@
   line-height: 20px;
   text-align: center;
   color: v.$white;
+
+  @media (min-width: v.$tablet-width) {
+    width: 161px;
+    margin: 0;
+
+    text-align: left;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin: 0 auto;
+    text-align: center;
+  }
 }

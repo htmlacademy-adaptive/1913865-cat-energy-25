@@ -1,4 +1,13 @@
+@use "../variables.scss" as v;
+
+.main-form {
+  @media (min-width: v.$desktop-width) {
+    position: relative;
+  }
+}
+
 .main-form__title {
+  margin: 0 v.$mobile-side-indent;
   margin-top: 27px;
   margin-bottom: 37px;
 
@@ -6,6 +15,33 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-left: 69px;
+    margin-right: 69px;
+    margin-top: 0;
+    margin-bottom: 54px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-left: v.$desktop-side-indent;
+    margin-right: v.$desktop-side-indent;
+  }
+}
+
+.main-form__section {
+  margin: 0 v.$mobile-side-indent;
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0 69px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin: 0 v.$desktop-side-indent;
+  }
 }
 
 .main-form__advice {
@@ -15,12 +51,21 @@
   font-family: "Oswald", system-ui;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: v.$tablet-width) {
+    width: 325px;
+    margin-bottom: 66px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.main-form__tip {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 32px;
-
-  line-height: 16px;
+.main-form__cooperation {
+  @media (min-width: v.$desktop-width) {
+    position: absolute;
+    left: v.$desktop-side-indent;
+    bottom: 107px;
+    z-index: 1;
+  }
 }
