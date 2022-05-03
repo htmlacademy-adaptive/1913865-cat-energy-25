@@ -48,9 +48,11 @@
           </p>
         </div>
         <img class="programs__image" src="img/main-can.png" alt="Питание для котов">
-        <a class="programs__link" href="#">
-          <span class="programs__link-content">Подобрать программу</span>
-        </a>
+        <div class="programs__link-wrapper">
+          <a class="programs__link" href="#">
+            <span class="programs__link-content">Подобрать программу</span>
+          </a>
+        </div>
         <ul class="programs__cards-list">
           <li class="programs__main-card main-card main-card--weight-loss">
             <h3 class="main-card__title">
@@ -108,8 +110,12 @@
         <table class="example__results results">
           <thead class="results__head">
             <tr>
-              <th class="results__cell">Снижение веса</th>
-              <th class="results__cell">Затрачено времени</th>
+              <th class="results__cell">
+                <div class="results__cell-info"><span>снижение веса</span></div>
+              </th>
+              <th class="results__cell">
+                <div class="results__cell-info"><span>затрачено времени</span></div>
+              </th>
             </tr>
           </thead>
           <tbody class="results__body">
@@ -204,7 +210,7 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
+      <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           <svg class="copyright__logo" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
@@ -213,6 +219,7 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 
 </html>

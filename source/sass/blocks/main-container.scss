@@ -13,8 +13,15 @@
   padding: 0 v.$mobile-side-indent;
   padding-top: 25px;
 
+  @media (min-width: v.$tablet-width) {
+    padding: 0 v.$tablet-side-indent;
+    padding-top: 43px;
+    border-top: 1px solid #e6e6e6;
+  }
+
   @media (min-width: v.$desktop-width) {
     padding: 0 v.$desktop-side-indent;
+    border: none;
   }
 }
 

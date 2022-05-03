@@ -20,17 +20,22 @@
 .guide__list {
   @include v.list-reset();
 
-  @media (min-width: v.$tablet-width) and (max-width: calc(v.$desktop-width - 1px)) {
+  @media (min-width: v.$tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 140px;
     row-gap: 37px;
+
+    margin-bottom: 27px;
   }
 
   @media (min-width: v.$desktop-width) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
+
+    gap: unset;
+    grid-template-columns: unset;
   }
 }
 
@@ -40,10 +45,29 @@
   margin-bottom: 20px;
 
   @media (min-width: v.$tablet-width) {
+    position: relative;
     flex-direction: column;
+    min-height: 280px;
+    width: 85%;
 
     font-size: 16px;
     line-height: 24px;
+
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i})::after {
+        content: "#{$i}";
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 0;
+
+        font-family: "Oswald", system-ui;
+        font-size: 280px;
+        line-height: 205px;
+        color: v.$secondary-color;
+      }
+    }
   }
 
   @media (min-width: v.$desktop-width) {

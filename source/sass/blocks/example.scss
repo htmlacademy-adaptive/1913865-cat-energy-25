@@ -11,7 +11,7 @@
   }
 
   @media (min-width: v.$desktop-width) {
-    grid-template-columns: 4fr 5fr;
+    grid-template-columns: 1fr 1fr;
 
     background: linear-gradient(to bottom, #ffffff 25%, #eaeaea 25%);
   }
@@ -55,6 +55,7 @@
   }
 
   @media (min-width: v.$desktop-width) {
+    width: 72%;
     grid-column: auto;
     margin-bottom: 69px;
   }
@@ -62,12 +63,11 @@
 
 .example__results {
   width: 100%;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 
   @media (min-width: v.$tablet-width) {
     width: 50%;
-    margin: 0;
+    margin-bottom: 85px;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -88,8 +88,10 @@
 
   @media (min-width: v.$tablet-width) {
     margin-bottom: 0;
+    margin-top: 13px;
 
     font-size: 20px;
+    text-align: right;
   }
 
   @media (min-width: v.$desktop-width) {
