@@ -127,24 +127,24 @@
           </tbody>
         </table>
         <strong class="example__price">
-          Затраты на питание: 15 000 РУБ.
+          Затраты на питание: <span>15 000 РУБ.</span>
         </strong>
-        <div class="example__comparison slider">
+        <div class="example__slider slider">
           <div class="slider__wrapper">
-            <div class="slider__slide">
-              <img class="slider__content" src="img/cat-before.png" alt="Полная кошка">
+            <div class="slider__slide slider__slide-left" style="width: 60%;">
+              <img class="slider__content" src="img/cat-before.png" width="280" height="232" alt="Полная кошка">
             </div>
-            <div class="slider__slide" hidden>
-              <img class="slider__content" src="img/cat-after.png" alt="Худая кошка">
+            <div class="slider__slide slider__slide-right" style="width: 40%;">
+              <img class="slider__content" src="img/cat-after.png" width="280" height="232" alt="Худая кошка">
             </div>
             <div class="slider__rangebar rangebar">
-              <span class="rangebar__description">
+              <button class="rangebar__button rangebar__button-before" type="button">
                 Было
-              </span>
-              <div class="slider__controls"></div>
-              <span class="rangebar__description">
+              </button>
+              <input class="rangebar__controls" type="range" min="0" max="100%" value="50%"></input>
+              <button class="rangebar__button rangebar__button-after" type="button">
                 Стало
-              </span>
+              </button>
             </div>
           </div>
         </div>
@@ -157,7 +157,7 @@
           Приглашаем к сотрудничеству дилеров!
         </p>
         <address class="cooperation__address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
         </address>
       </aside>
       <section class="map"> <!--Пока не знаю как это правильно делается, на этом этапе пока сделал так-->
@@ -221,6 +221,7 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 
 </html>
