@@ -32,8 +32,8 @@
   margin-top: 23px;
 
   @media (min-width: v.$tablet-width) {
-    display: flex;
-    align-items: center;
+    padding-top: 20px;
+    padding-right: 20px;
     margin: 0;
     margin-right: auto;
     margin-left: 12px;

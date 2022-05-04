@@ -1,4 +1,46 @@
-.slider__rangebar {
-  padding-top: 15px;
-  padding-bottom: 40px;
+@use "../variables.scss" as v;
+
+.slider__wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: v.$tablet-width) {
+    width: 592px;
+  }
+}
+
+.slider__slide {
+  overflow: hidden;
+
+  &-left {
+    .slider__content {
+      position: relative;
+      left: 10px;
+    }
+  }
+
+  &-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    direction: rtl;
+
+    .slider__content {
+      position: relative;
+      left: 10px;
+    }
+  }
+}
+
+.slider__content {
+  display: block;
+  width: min-content;
+
+  @media (min-width: v.$tablet-width) {
+    //Временное решение, пока не будет адаптивных картинок
+    width: 592px;
+    height: 511px;
+  }
 }

@@ -3,6 +3,7 @@
 .social__list {
   @include v.list-reset;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   @media (max-width: v.$mobile-only-width) {

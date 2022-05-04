@@ -25,7 +25,7 @@ $column-gap-tablet: 14px;
   }
 
   @media (min-width: v.$tablet-width) {
-    width: 70%;
+    width: 366px;
     border-spacing: $column-gap-tablet 0;
   }
 }
