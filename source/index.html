@@ -48,9 +48,11 @@
           </p>
         </div>
         <img class="programs__image" src="img/main-can.png" alt="Питание для котов">
-        <a class="programs__link" href="#">
-          <span class="programs__link-content">Подобрать программу</span>
-        </a>
+        <div class="programs__link-wrapper">
+          <a class="programs__link" href="#">
+            <span class="programs__link-content">Подобрать программу</span>
+          </a>
+        </div>
         <ul class="programs__cards-list">
           <li class="programs__main-card main-card main-card--weight-loss">
             <h3 class="main-card__title">
@@ -108,8 +110,12 @@
         <table class="example__results results">
           <thead class="results__head">
             <tr>
-              <th class="results__cell">Снижение веса</th>
-              <th class="results__cell">Затрачено времени</th>
+              <th class="results__cell">
+                <div class="results__cell-info"><span>снижение веса</span></div>
+              </th>
+              <th class="results__cell">
+                <div class="results__cell-info"><span>затрачено времени</span></div>
+              </th>
             </tr>
           </thead>
           <tbody class="results__body">
@@ -120,24 +126,24 @@
           </tbody>
         </table>
         <strong class="example__price">
-          Затраты на питание: 15 000 РУБ.
+          Затраты на питание: <span>15 000 РУБ.</span>
         </strong>
-        <div class="example__comparison slider">
+        <div class="example__slider slider">
           <div class="slider__wrapper">
-            <div class="slider__slide">
-              <img class="slider__content" src="img/cat-before.png" alt="Полная кошка">
+            <div class="slider__slide slider__slide-left" style="width: 60%;">
+              <img class="slider__content" src="img/cat-before.png" width="280" height="232" alt="Полная кошка">
             </div>
-            <div class="slider__slide" hidden>
-              <img class="slider__content" src="img/cat-after.png" alt="Худая кошка">
+            <div class="slider__slide slider__slide-right" style="width: 40%;">
+              <img class="slider__content" src="img/cat-after.png" width="280" height="232" alt="Худая кошка">
             </div>
             <div class="slider__rangebar rangebar">
-              <span class="rangebar__description">
+              <button class="rangebar__button rangebar__button-before" type="button">
                 Было
-              </span>
-              <div class="slider__controls"></div>
-              <span class="rangebar__description">
+              </button>
+              <input class="rangebar__controls" type="range" min="0" max="100%" value="50%"></input>
+              <button class="rangebar__button rangebar__button-after" type="button">
                 Стало
-              </span>
+              </button>
             </div>
           </div>
         </div>
@@ -150,7 +156,7 @@
           Приглашаем к сотрудничеству дилеров!
         </p>
         <address class="cooperation__address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
         </address>
       </aside>
       <section class="map"> <!--Пока не знаю как это правильно делается, на этом этапе пока сделал так-->
@@ -204,7 +210,7 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
+      <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           <svg class="copyright__logo" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
@@ -213,6 +219,8 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 
 </html>

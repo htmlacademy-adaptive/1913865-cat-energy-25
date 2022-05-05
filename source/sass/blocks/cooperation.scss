@@ -22,7 +22,9 @@
 }
 
 .cooperation__description {
+  width: 139px;
   margin: 0;
+  flex-shrink: 0;
 
   font-family: "Oswald", system-ui;
   font-size: 16px;
@@ -31,16 +33,26 @@
   color: #111111;
 
   @media (min-width: v.$tablet-width) {
+    width: 172px;
+
     font-size: 20px;
     line-height: 26px;
   }
 }
 
 .cooperation__address {
+  width: 139px;
   line-height: 20px;
   color: v.$special-text;
 
   @media (min-width: v.$tablet-width) {
+    width: 160px;
+
     font-size: 16px;
+
+    span {
+      display: block;
+      margin-top: 1em;
+    }
   }
 }

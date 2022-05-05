@@ -2,15 +2,105 @@
 
 .rangebar {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 210px;
+  padding-top: 15px;
+  padding-bottom: 40px;
 }
 
-.rangebar__description {
+.rangebar__controls {
+  width: 86px;
+  height: 14px;
+  margin: 0 13px;
+  padding: 4px 6px;
+
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  overflow: hidden;
+
+  //По каким то причинам не работает группирование селекторов для этих псевдоэлементов,
+  //поэтому создал миксины чтобы не повторять один и тот же код дважды
+  //могу показать на демонстрации, если нужно, или проверь самостоятельно
+
+  @mixin track() {
+    appearance: none;
+    height: 6px;
+
+    border-radius: 6px;
+    background-color: v.$basic-color;
+
+    @media (min-width: v.$tablet-width) {
+      height: 6px;
+      background-color: #dcdcdc;
+    }
+  }
+
+  @mixin thumb() {
+    appearance: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    border: none;
+
+    background-color: transparent;
+    box-shadow: 46px 0 0 43px v.$white;
+
+    @media (min-width: v.$tablet-width) {
+      width: 34px;
+      height: 34px;
+      position: relative;
+      top: -15px;
+
+      background-color: v.$basic-color;
+      border-radius: 50%;
+      border: 1px solid #cdcdcd;
+      box-shadow: inset 0 0 0 12.5px v.$white;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    }
+  }
+
+  &::-moz-range-track {
+    @include track();
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include track();
+  }
+
+  &::-moz-range-thumb {
+    @include thumb();
+  }
+
+  &::-webkit-slider-thumb {
+    @include thumb();
+  }
+
+  @media (min-width: v.$tablet-width) {
+    width: 426px;
+    padding: 0;
+    margin: 0 17px;
+
+    border: none;
+    background-color: transparent;
+    overflow: visible;
+  }
+}
+
+.rangebar__button {
   display: block;
+  min-width: 49px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 
   font-family: "Oswald", system-ui;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: v.$tablet-width) {
     font-size: 20px;

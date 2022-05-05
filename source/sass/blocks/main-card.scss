@@ -1,17 +1,18 @@
 @use "../variables.scss" as v;
 
 .main-card {
-  padding: 21px 33px 21px 20px;
+  padding: 30px 33px 21px 20px;
   background-color: v.$secondary-color;
 
   @media (min-width: v.$tablet-width) {
-    padding: 77px 60px 57px 52px;
+    padding: 77px 56px 57px 52px;
   }
 }
 
 .main-card__title {
   margin: 0;
   margin-bottom: 30px;
+  margin-left: 71px;
 
   font-family: "Oswald", system-ui;
   font-weight: 400;
@@ -22,7 +23,8 @@
   color: v.$black;
 
   @media (min-width: v.$tablet-width) {
-    width: 55%;
+    width: 57%;
+    margin-left: 0;
 
     font-size: 36px;
     line-height: 36px;
@@ -30,24 +32,27 @@
 
   @media (min-width: v.$desktop-width) {
     width: auto;
+    margin-left: 162px;
     margin-bottom: 73px;
-    text-align: center;
   }
 }
 
 .main-card__description {
   margin: 0;
-  margin-bottom: 42px;
+  padding-bottom: 23px;
+  margin-bottom: 19px;
 
   font-family: "Arial", system-ui;
   color: v.$special-text;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: v.$tablet-width) {
-    width: 55%;
+    width: 57%;
 
     font-size: 16px;
     line-height: 24px;
     color: v.$black;
+    border: none;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -57,7 +62,8 @@
 }
 
 .main-card__link {
-  display: block;
+  display: flex;
+  align-items: center;
 
   font-family: "Oswald", system-ui;
   font-size: 16px;
@@ -70,5 +76,142 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 47px;
+    height: 10px;
+
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/arrow.svg");
+  }
+}
+
+.main-card--weight-loss {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+
+    background-color: v.$basic-color;
+    border-radius: 50%;
+
+    @media (min-width: v.$tablet-width) {
+      left: unset;
+      top: 92px;
+      right: 62px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      right: unset;
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 21px;
+    left: 26px;
+    width: 37px;
+    height: 54px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/main-cat-slim.svg");
+
+    @media (min-width: v.$tablet-width) {
+      left: unset;
+      top: 81px;
+      right: 91px;
+      width: 140px;
+      height: 194px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      right: unset;
+      top: 41px;
+      left: 67px;
+      width: 70px;
+      height: 97px;
+    }
+  }
+}
+
+.main-card--weight-gain {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+
+    background-color: v.$basic-color;
+    border-radius: 50%;
+
+    @media (min-width: v.$tablet-width) {
+      left: unset;
+      top: 91px;
+      right: 60px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      right: unset;
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 13px;
+    width: 68px;
+    height: 29px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/main-cat-pro.svg");
+
+    @media (min-width: v.$tablet-width) {
+      left: unset;
+      top: 135px;
+      right: 28px;
+      width: 269px;
+      height: 113px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      right: unset;
+      left: 33px;
+      top: 67px;
+      width: 134px;
+      height: 56px;
+    }
   }
 }

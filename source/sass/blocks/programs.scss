@@ -18,12 +18,12 @@ $programs-side-indent: 87px;
 .programs__inner {
   min-width: 320px;
   min-height: 302px;
-  padding: 0 v.$mobile-side-indent;
+  padding: 0 35px;
   padding-top: 27px;
   margin: 0 auto;
 
   background-image: linear-gradient(to top, rgba(v.$basic-color, 0.85), rgba(v.$basic-color, 0.85)), url("../img/main-background-cat.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: v.$basic-color;
 
@@ -34,7 +34,6 @@ $programs-side-indent: 87px;
     min-height: 0;
     padding: 0;
     margin-left: $programs-side-indent;
-    margin-bottom: 49px;
     order: -2;
 
     background: initial;
@@ -49,6 +48,7 @@ $programs-side-indent: 87px;
   font-family: "Oswald", system-ui;
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
 
   @media (min-width: v.$tablet-width) {
     width: 420px;
@@ -56,6 +56,7 @@ $programs-side-indent: 87px;
 
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -70,13 +71,17 @@ $programs-side-indent: 87px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: v.$tablet-width) {
     width: 420px;
     margin: 0;
+    margin-bottom: 49px;
+
 
     font-size: 20px;
     line-height: 20px;
+    text-align: left;
   }
 }
 
@@ -85,10 +90,12 @@ $programs-side-indent: 87px;
   width: 280px;
   height: 270px;
   margin: 0 auto;
+  margin-top: -135px;
 
   @media (min-width: v.$tablet-width) {
     // width: 709px;
     // height: 609px;
+    margin-top: 0;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -102,11 +109,22 @@ $programs-side-indent: 87px;
   }
 }
 
+.programs__link-wrapper {
+  @media (max-width: v.$mobile-only-width) {
+    margin: 0 v.$mobile-side-indent;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    order: -1;
+  }
+}
+
 .programs__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 280px;
+  min-width: 280px;
+  max-width: 500px;
 
   margin: 0 auto;
   margin-bottom: 20px;
@@ -121,8 +139,6 @@ $programs-side-indent: 87px;
     width: max-content;
     min-height: 54px;
     margin-left: $programs-side-indent;
-
-    order: -1;
   }
 
   @media (min-width: v.$desktop-width) {
