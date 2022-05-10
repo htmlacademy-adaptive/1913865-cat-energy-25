@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="./css/style.css" rel="stylesheet">
   </head>
@@ -16,7 +16,7 @@
       <a class="main-header__logo-text" href="index.html">
         <img class="main-header__logo-text-image" src="img/logo-2.svg" width="101" height="18" alt="Логотип Кэт Энерджи">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="vissually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="main-nav__item">
@@ -64,24 +64,27 @@
                 <input class="programs-form__field-control input" type="number" placeholder="7" name="age">
               </label>
             </fieldset>
-            <fieldset class="programs-form__fieldset programs-form__field-type-of-program">
+            <fieldset class="programs-form__fieldset programs-form__fieldset-type-of-program">
               <legend class="vissually-hidden">
                 Тип программы
               </legend>
               <label class="programs-form__field">
-                <input class="programs-form__field-radio input input--radio input--checked" type="radio" name="type-of-program" value="weight-loss" checked>
+                <input class="vissually-hidden programs-form__field-radio input input--radio" type="radio" name="type-of-program" value="weight-loss" checked>
+                <span class="programs-form__radio-mark"></span>
                 <span class="programs-form__field-label programs-form__field-label--radio">
                   Похудение
                 </span>
               </label>
               <label class="programs-form__field">
-                <input class="programs-form__field-radio input input--radio" type="radio" name="type-of-program" value="weight-gain">
+                <input class="vissually-hidden programs-form__field-radio input input--radio" type="radio" name="type-of-program" value="weight-gain">
+                <span class="programs-form__radio-mark"></span>
                 <span class="programs-form__field-label programs-form__field-label--radio">
                   Набор массы
                 </span>
               </label>
               <label class="programs-form__field">
-                <input class="programs-form__field-radio input input--radio" type="radio" name="type-of-program" value="need-advice">
+                <input class="vissually-hidden programs-form__field-radio input input--radio" type="radio" name="type-of-program" value="need-advice">
+                <span class="programs-form__radio-mark"></span>
                 <span class="programs-form__field-label programs-form__field-label--radio">
                   Не знаю (нужен ваш совет)
                 </span>
@@ -89,7 +92,7 @@
             </fieldset>
           </div>
           <fieldset class="programs-form__fieldset programs-form__fieldset-contacts">
-            <legend class="programs-form__legend">
+            <legend class="programs-form__legend programs-form__legend-contacts">
               Контактные данные (владельца кота)
             </legend>
             <label class="programs-form__field">
@@ -97,16 +100,25 @@
                 e-mail:*
               </span>
               <input class="programs-form__field-control input input--required" type="email" placeholder="kuklachev@gmail.com" name="email" required>
+              <svg class="programs-form__mail-img" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#222" stroke-width="1.3" d="M.65 5.8477v8M17.65 5.8477v8M0 13.1977h18M0 1.1977h18M17.35 3.0297 9 9.5243.65 3.0297v-1.532h16.7v1.532Z"/>
+              </svg>
             </label>
             <label class="programs-form__field">
               <span class="programs-form__field-label">
                 Телефон:*
               </span>
               <input class="programs-form__field-control input input--required" type="tel" placeholder="8 (960) 900-60-90" name="tel" required>
+              <svg class="programs-form__phone-img" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)" fill="#000">
+                  <path d="M17.9 9.7528H9.4v1.2041h8.5l-2.1 2.1072.9.9031 3.1-3.1107a.7539.7539 0 0 0 .15-.4515.754.754 0 0 0-.15-.4516l-3.1-3.1106-.9.903 2.1 2.007ZM8.1 19.7872v-6.2213a.6533.6533 0 0 0-.1886-.4129.649.649 0 0 0-.4114-.1892H3.1c.0052.3177.1332.621.3572.8457s.5262.3532.8428.3584h2.5v5.0172H3.1a1.7835 1.7835 0 0 1-.6982-.0955 1.7882 1.7882 0 0 1-.6074-.3585 1.7967 1.7967 0 0 1-.4224-.5661 1.8011 1.8011 0 0 1-.172-.6857V3.4311a1.7795 1.7795 0 0 1 .483-1.251A1.7674 1.7674 0 0 1 2.9 1.625h3.9v5.0172H4.4a1.218 1.218 0 0 0-.8428.3584c-.224.2247-.352.528-.3572.8458h4.4a.649.649 0 0 0 .4114-.1893.6532.6532 0 0 0 .1886-.4128V.9225a.8632.8632 0 0 0-.2628-.403A.8586.8586 0 0 0 7.5.3204H3.1a2.9907 2.9907 0 0 0-1.1559.1902 2.9985 2.9985 0 0 0-.9952.62 3.01 3.01 0 0 0-.6827.955A3.019 3.019 0 0 0 0 3.2305v13.9478c-.029.3991.0247.7998.1575 1.177.1328.3772.342.7228.6144 1.0149.2724.2922.602.5246.9683.6828a2.8824 2.8824 0 0 0 1.1598.236h4.6a.499.499 0 0 0 .555-.2834.503.503 0 0 0 .045-.2183Z"/>
+                </g>
+                <defs><clipPath id="a"><path fill="#fff" transform="translate(0 .3204)" d="M0 0h20v20.0688H0z"/></clipPath></defs>
+              </svg>
             </label>
           </fieldset>
-          <fieldset class="programs-form__fieldset">
-            <legend class="programs-form__legend">
+          <fieldset class="programs-form__fieldset programs-form__fieldset-comments">
+            <legend class="programs-form__legend programs-form__legend-comments">
               Комментарий
             </legend>
             <label class="programs-form__field">
@@ -114,29 +126,33 @@
             </label>
           </fieldset>
           <fieldset class="programs-form__fieldset programs-form__fieldset-additional">
-            <legend class="programs-form__legend">
+            <legend class="programs-form__legend programs-form__legend-additional">
               Дополнительно
             </legend>
             <label class="programs-form__field">
-              <input class="programs-form__field-checkbox input input--checkbox input--checked" type="checkbox" name="additionally" value="sweetener" checked>
+              <input class="vissually-hidden programs-form__field-checkbox input input--checkbox" type="checkbox" name="additionally" value="sweetener" checked>
+              <span class="programs-form__checkbox-mark"></span>
               <span class="programs-form__field-label programs-form__field-label--checkbox">
                 Сахарозаменитель
               </span>
             </label>
             <label class="programs-form__field">
-              <input class="programs-form__field-checkbox input--checkbox input" type="checkbox" name="additionally" value="drinking-water">
+              <input class="vissually-hidden programs-form__field-checkbox input--checkbox input" type="checkbox" name="additionally" value="drinking-water">
+              <span class="programs-form__checkbox-mark"></span>
               <span class="programs-form__field-label programs-form__field-label--checkbox">
                 Питьевая вода
               </span>
             </label>
             <label class="programs-form__field">
-              <input class="programs-form__field-checkbox input--checkbox input" type="checkbox" name="additionally" value="milk">
+              <input class="vissually-hidden programs-form__field-checkbox input--checkbox input" type="checkbox" name="additionally" value="milk">
+              <span class="programs-form__checkbox-mark"></span>
               <span class="programs-form__field-label programs-form__field-label--checkbox">
                 Молоко
               </span>
             </label>
             <label class="programs-form__field">
-              <input class="programs-form__field-checkbox input input--checkbox" type="checkbox" name="additionally" value="vitamins">
+              <input class="vissually-hidden programs-form__field-checkbox input input--checkbox" type="checkbox" name="additionally" value="vitamins">
+              <span class="programs-form__checkbox-mark"></span>
               <span class="programs-form__field-label programs-form__field-label--checkbox">
                 Витамины
               </span>
@@ -157,8 +173,8 @@
         <p class="cooperation__description">
           Приглашаем к сотрудничеству дилеров!
         </p>
-        <address class="cooperation__adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        <address class="cooperation__address">
+          ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
         </address>
       </aside>
       <section class="map"> <!--Пока не знаю как это правильно делается, на этом этапе пока сделал так-->
@@ -214,14 +230,15 @@
       </div>
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            HTML Academy
-          <svg class="copyright__logo" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-            <path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          <span class="copyright__link-text">HTML Academy</span>
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
           </svg>
         </a>
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/cooperationstyles.js"></script>
   </body>
 
 </html>

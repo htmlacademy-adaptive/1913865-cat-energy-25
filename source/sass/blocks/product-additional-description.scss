@@ -17,11 +17,17 @@
     font-weight: inherit;
 
     @media (min-width: v.$desktop-width) {
+      width: 75%;
+
       text-align: left;
     }
   }
 
   td {
     text-align: right;
+
+    @media (min-width: v.$desktop-width) {
+      text-align: left;
+    }
   }
 }

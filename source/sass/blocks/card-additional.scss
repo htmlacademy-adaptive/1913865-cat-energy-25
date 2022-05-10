@@ -42,13 +42,16 @@
 
   @media (min-width: v.$desktop-width) {
     margin-bottom: 0;
+    padding-top: 10px;
   }
 }
 
 .card-additional__table {
   width: 100%;
+  margin-bottom: 12px;
 
   @media (min-width: v.$tablet-width) {
+    margin-bottom: unset;
     width: auto;
     margin-left: auto;
     text-align: right;
