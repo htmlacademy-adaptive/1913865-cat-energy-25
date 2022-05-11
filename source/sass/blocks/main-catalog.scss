@@ -7,10 +7,13 @@
 }
 
 .main-catalog__title {
-  @include v.page-margin;
+  margin: 0;
+  padding: 0 v.$mobile-side-indent;
+  padding-top: 27px;
+  padding-bottom: 41px;
 
-  margin-top: 27px;
-  margin-bottom: 40px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #ebebeb;
 
   font-family: "Oswald", system-ui;
   font-size: 36px;
@@ -18,10 +21,18 @@
   line-height: 36px;
 
   @media (min-width: v.$tablet-width) {
-    margin-bottom: 22px;
+    padding: 0 v.$tablet-side-indent;
+    padding-bottom: 18px;
+
+    border: none;
 
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-left: v.$desktop-side-indent;
+    padding-right: v.$desktop-side-indent;
   }
 }
 

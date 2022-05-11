@@ -1,7 +1,8 @@
 @use "../variables.scss" as v;
 
 .load-more {
-  padding: 25px 0;
+  position: relative;
+  padding: 25px v.$mobile-side-indent;
 
   @media (min-width: v.$tablet-width) {
     display: flex;
@@ -15,11 +16,35 @@
   @media (min-width: v.$desktop-width) {
     padding: 38px;
   }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 39px;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 2px;
+
+    background-color: #d3d3d3;
+
+    @media (min-width: v.$tablet-width) {
+      top: 82px;
+      left: calc(50% - 30px);
+      width: 60px;
+    }
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
 }
 
 .load-more__title {
   display: flex;
   justify-content: center;
+  margin-top: 53px;
   margin-bottom: 8px;
 
   font-family: "Oswald", system-ui;
@@ -31,7 +56,7 @@
   color: #111111;
 
   @media (min-width: v.$tablet-width) {
-    margin: 0 54px;
+    margin: 0 50px;
     margin-top: 136px;
     margin-bottom: 23px;
 

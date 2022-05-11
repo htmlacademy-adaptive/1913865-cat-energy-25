@@ -10,6 +10,9 @@
 }
 
 .rangebar__controls {
+  //Переменная для имитации поведения switch button
+  --left-offset: 0%;
+
   width: 86px;
   height: 14px;
   margin: 0 13px;
@@ -21,11 +24,17 @@
   border-radius: 6px;
   overflow: hidden;
 
+  &:disabled {
+    background-color: v.$white;
+  }
+
   //По каким то причинам не работает группирование селекторов для этих псевдоэлементов,
   //поэтому создал миксины чтобы не повторять один и тот же код дважды
   //могу показать на демонстрации, если нужно, или проверь самостоятельно
 
   @mixin track() {
+    position: relative;
+    left: var(--left-offset);
     appearance: none;
     height: 6px;
 
@@ -77,6 +86,7 @@
   &::-webkit-slider-thumb {
     @include thumb();
   }
+
 
   @media (min-width: v.$tablet-width) {
     width: 426px;

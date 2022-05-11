@@ -10,33 +10,86 @@
     margin-bottom: 52px;
   }
 
-  @media (min-width: v.$tablet-width) {
-    margin-bottom: 68px;
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 49px;
   }
 }
 
 .programs-form__field {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+
+  cursor: pointer;
 
   @media (min-width: v.$tablet-width) {
     margin-bottom: 20px;
   }
 }
 
+.programs-form__radio-mark {
+  position: relative;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.programs-form__field-radio:checked + .programs-form__radio-mark::before {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 13.5px;
+  height: 13.5px;
+
+  border-radius: 50%;
+  background-color: v.$basic-color;
+}
+
+.programs-form__checkbox-mark {
+  position: relative;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #cdcdcd;
+}
+
+.programs-form__field-checkbox:checked + .programs-form__checkbox-mark::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../img/icons/tick.svg");
+  background-position: center;
+}
+
+
 .programs-form__field-label {
   margin-right: 13px;
 
   white-space: nowrap;
 
-  @include v.programs-form-text-style();
+  font-family: "Oswald", system-ui;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: v.$special-text;
 
   &--radio {
+    padding-left: 15px;
+
     color: #222222;
   }
 
   &--checkbox {
+    padding-left: 16px;
+
     color: v.$black;
   }
 
@@ -47,23 +100,33 @@
 }
 
 .programs-form__field-control {
+  position: relative;
   width: 100%;
   min-height: 45px;
+  padding: 13px 15px;
+  padding-right: 35px;
   align-self: flex-end;
 
+  border: 1px solid #cdcdcd;
+
   &::placeholder {
-    @include v.programs-form-text-style();
+    font-family: "Oswald", system-ui;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: v.$special-text;
   }
 
   @media (min-width: v.$tablet-width) {
     min-height: 52px;
+    padding-right: 40px;
   }
 }
 
 .programs-form__legend {
-  display: block;
-  width: 70%;
-  margin-bottom: 35px;
+  position: relative;
+  display: flex;
+  width: calc(100% + v.$mobile-side-indent);
   padding: 0;
 
   font-family: "Oswald", system-ui;
@@ -72,20 +135,56 @@
   line-height: 26px;
 
   @media (min-width: v.$tablet-width) {
-    width: auto;
-    margin-bottom: 76px;
+    width: calc(100% + 67px);
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: calc(100% + v.$desktop-side-indent);
+  }
+}
+
+.programs-form__legend-contacts {
+  margin-bottom: 35px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.programs-form__legend-comments {
+  margin-bottom: 38px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.programs-form__legend-additional {
+  margin-bottom: 34px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 57px;
   }
 }
 
 .programs-form__field-textarea {
   width: 100%;
   min-height: 150px;
+  padding: 9px 0;
+  padding-left: 15px;
+  padding-right: 12px;
+
+  border: 1px solid #e7e7e7;
 
   &::placeholder {
-    @include v.programs-form-text-style();
+    font-family: "Oswald", system-ui;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: v.$special-text;
   }
 
   @media (min-width: v.$tablet-width) {
@@ -121,14 +220,158 @@
   }
 }
 
-.programs-form__fieldset-additional {
-  @media (min-width: v.$tablet-width) {
+.programs-form__fieldset-contacts {
+  margin-bottom: 45px;
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 47px;
+  }
+
+  .programs-form__legend::before {
+    @media (min-width: v.$tablet-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 22px;
+      left: -67px;
+      right: calc(100% + 39px);
+      height: 2px;
+
+      background-color: v.$basic-color;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      left: - v.$desktop-side-indent;
+    }
+  }
+
+  .programs-form__legend::after {
+    content: "";
+    display: block;
+    flex-grow: 1;
+    min-width: 100px;
+    margin-left: 18px;
+    height: 2px;
+    margin-top: 16px;
+
+    background-color: v.$basic-color;
+
+    @media (min-width: v.$tablet-width) {
+      min-width: 67px;
+      margin-left: 42px;
+      margin-top: 22px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      min-width: v.$desktop-side-indent;
+      margin-left: 40px;
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0 80px;
+  }
+}
+
+.programs-form__fieldset-comments {
+  margin-bottom: 45px;
+
+  .programs-form__legend::before {
+    @media (min-width: v.$tablet-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 22px;
+      left: -67px;
+      right: calc(100% + 39px);
+      height: 2px;
+
+      background-color: v.$basic-color;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      left: - v.$desktop-side-indent;
+    }
+  }
+
+  .programs-form__legend::after {
+    content: "";
+    display: block;
+    flex-grow: 1;
+    min-width: v.$mobile-side-indent;
+    margin-left: 18px;
+    height: 2px;
+    margin-top: 15px;
+
+    background-color: v.$basic-color;
+
+    @media (min-width: v.$tablet-width) {
+      min-width: 67px;
+      margin-left: 38px;
+      margin-top: 22px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      min-width: v.$desktop-side-indent;
+      margin-left: 40px;
+    }
+  }
+}
+
+.programs-form__fieldset-additional {
+  margin-bottom: 34px;
+
+  .programs-form__legend::before {
+    @media (min-width: v.$tablet-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 22px;
+      left: -67px;
+      right: calc(100% + 39px);
+      height: 2px;
+
+      background-color: v.$basic-color;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      left: - v.$desktop-side-indent;
+    }
+  }
+
+  .programs-form__legend::after {
+    content: "";
+    display: block;
+    flex-grow: 1;
+    min-width: v.$mobile-side-indent;
+    margin-left: 18px;
+    height: 2px;
+    margin-top: 15px;
+
+    background-color: v.$basic-color;
+
+    @media (min-width: v.$tablet-width) {
+      min-width: 67px;
+      margin-left: 41px;
+      margin-top: 22px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      min-width: v.$desktop-side-indent;
+      margin-left: 40px;
+    }
+  }
+
+  @media (min-width: v.$tablet-width) {
+    display: grid;
+    grid-template-columns: 6fr 5fr;
   }
 
   @media (min-width: v.$desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
 
@@ -150,13 +393,15 @@
 .programs-form__button-wrapper {
   @media (min-width: v.$tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 6fr 5fr;
     align-items: center;
     margin-bottom: 72px;
   }
 
   @media (min-width: v.$desktop-width) {
     margin-bottom: 82px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -168,16 +413,46 @@
   }
 }
 
-.programs-form__field-type-of-program {
-  @media (min-width: v.$desktop-width) {
+.programs-form__fieldset-type-of-program {
+  box-sizing: content-box;
+  width: 100%;
+  padding: 0 v.$mobile-side-indent;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  transform: translateX(- v.$mobile-side-indent);
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: v.$tablet-width) {
+    box-sizing: border-box;
+    transform: none;
+    margin-bottom: 75px;
     padding: 25px 28px;
+    padding-bottom: 5px;
+
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 68px;
   }
 }
 
-.programs-form__fieldset-contacts {
-  @media (min-width: v.$desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 80px;
+.programs-form__phone-img {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
+.programs-form__mail-img {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+
+  @media (min-width: v.$tablet-width) {
+    top: 19px;
+    right: 19.5px;
   }
 }

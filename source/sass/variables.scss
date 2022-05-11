@@ -13,21 +13,13 @@ $mobile-side-indent: 20px;
 $tablet-side-indent: 30px;
 $desktop-side-indent: 110px;
 
-@mixin programs-form-text-style() {
-  font-family: "Oswald", system-ui;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $special-text;
-}
-
 @mixin list-reset() {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-@mixin page-margin {
+@mixin page-margin() {
   margin: 0 $mobile-side-indent;
 
   @media (min-width: $tablet-width) {
