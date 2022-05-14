@@ -6,15 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page__body page__body--index">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="img/logo-1.svg" width="34" height="38" alt="Интернет-магазин Кэт Энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-1-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logos/cat-energy-1-tablet.svg" width="60" height="50">
+          <img class="main-header__logo-image" src="img/logos/cat-energy-1.svg" width="34" height="38" alt="Интернет-магазин Кэт Энерджи">
+        </picture>
       </a>
       <a class="main-header__logo-text" href="#">
-        <img class="main-header__logo-text-image" src="img/logo-2.svg" width="101" height="18" alt="Логотип Кэт Энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-2-tablet.svg" width="118" height="21">
+          <source media="(min-width: 768px)" srcset="img/logos/cat-energy-2-tablet.svg" width="101" height="19">
+          <img class="main-header__logo-text-image" src="img/logos/cat-energy-2.svg" width="101" height="19" alt="Логотип Кэт Энерджи">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="vissually-hidden">Открыть меню</span></button>
@@ -47,7 +59,13 @@
             Занялся собой? Займись котом!
           </p>
         </div>
-        <img class="programs__image" src="img/main-can.png" alt="Питание для котов">
+        <div class="programs__image-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/main-can-desktop.png, img/main-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/main-can-tablet.png, img/main-can-tablet@2x.png 2x">
+            <img class="programs__image" src="img/main-can.png" srcset="img/main-can@2x.png 2x" alt="Питание для котов">
+          </picture>
+        </div>
         <div class="programs__link-wrapper">
           <a class="programs__link" href="form.html">
             <span class="programs__link-content">Подобрать программу</span>
@@ -130,11 +148,17 @@
         </strong>
         <div class="example__slider slider">
           <div class="slider__wrapper">
-            <div class="slider__slide slider__slide-left" style="width: 60%;">
-              <img class="slider__content" src="img/cat-before.png" width="280" height="232" alt="Полная кошка">
+            <div class="slider__slide slider__slide-left" style="width: 50%;">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png, img/cat-before-tablet@2x.png 2x">
+                <img class="slider__content" width="280" height="232" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" alt="Полная кошка">
+              </picture>
             </div>
-            <div class="slider__slide slider__slide-right" style="width: 40%;">
-              <img class="slider__content" src="img/cat-after.png" width="280" height="232" alt="Худая кошка">
+            <div class="slider__slide slider__slide-right" style="width: 50%;">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png, img/cat-after-tablet@2x.png 2x">
+                <img class="slider__content" width="280" height="232" src="img/cat-after.png" srcset="img/cat-after@2x.png 2x" alt="Худая кошка">
+              </picture>
             </div>
             <div class="slider__rangebar rangebar">
               <button class="rangebar__button rangebar__button-before" type="button">
@@ -172,7 +196,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <img class="main-footer__logo" src="img/logo-2.svg" width="128" height="24" alt="Интернет-магазин Кэт Энерджи">
+      <img class="main-footer__logo" src="img/logos/cat-energy-2.svg" width="128" height="24" alt="Интернет-магазин Кэт Энерджи">
       <div class="main-footer__social social">
         <p class="vissually-hidden">
           Наши социальные сети:

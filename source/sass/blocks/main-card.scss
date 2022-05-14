@@ -127,13 +127,14 @@
     display: block;
     position: absolute;
     top: 21px;
-    left: 26px;
-    width: 37px;
-    height: 54px;
+    left: 28px;
+    width: 36px;
+    height: 50px;
 
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../img/main-cat-slim.svg");
+    background-size: contain;
 
     @media (min-width: v.$tablet-width) {
       left: unset;
@@ -191,19 +192,20 @@
     position: absolute;
     top: 35px;
     left: 13px;
-    width: 68px;
-    height: 29px;
+    width: 67px;
+    height: 28px;
 
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../img/main-cat-pro.svg");
+    background-size: contain;
 
     @media (min-width: v.$tablet-width) {
       left: unset;
       top: 135px;
       right: 28px;
-      width: 269px;
-      height: 113px;
+      width: 268px;
+      height: 112px;
     }
 
     @media (min-width: v.$desktop-width) {

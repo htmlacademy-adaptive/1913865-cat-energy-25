@@ -93,18 +93,18 @@
   }
 
   &--leaf::before {
-    background-image: url("../img/icon-leaf.svg");
+    background-image: url("../img/icons/leaf.svg");
   }
 
   &--tube::before {
-    background-image: url("../img/icon-tube.svg");
+    background-image: url("../img/icons/tube.svg");
   }
 
   &--eat::before {
-    background-image: url("../img/icon-eat.svg");
+    background-image: url("../img/icons/eat.svg");
   }
 
   &--alarm::before {
-    background-image: url("../img/icon-alarm.svg");
+    background-image: url("../img/icons/alarm.svg");
   }
 }
