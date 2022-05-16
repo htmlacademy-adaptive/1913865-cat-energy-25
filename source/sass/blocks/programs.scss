@@ -24,10 +24,13 @@ $programs-side-indent: 87px;
 
   background-image: linear-gradient(to top, rgba(v.$basic-color, 0.85), rgba(v.$basic-color, 0.85)), url("../img/main-background-cat.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-color: v.$basic-color;
 
   color: v.$white;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/main-background-cat@2x.jpg");
+  }
 
   @media (min-width: v.$tablet-width) {
     width: auto;
@@ -60,6 +63,8 @@ $programs-side-indent: 87px;
   }
 
   @media (min-width: v.$desktop-width) {
+    position: relative;
+    z-index: 1;
     width: 100%;
   }
 }
@@ -93,17 +98,25 @@ $programs-side-indent: 87px;
   margin-top: -135px;
 
   @media (min-width: v.$tablet-width) {
-    // width: 709px;
-    // height: 609px;
-    margin-top: 0;
+    position: relative;
+    z-index: -1;
+    width: 709px;
+    height: 609px;
+    margin-top: -100px;
   }
 
   @media (min-width: v.$desktop-width) {
+    left: -162px;
+    z-index: 0;
     margin: 0;
     margin-bottom: 136px;
-    // width: 552px;
-    // height: 499px;
+    width: 552px;
+    height: 499px;
+  }
+}
 
+.programs__image-wrapper {
+  @media (min-width: v.$desktop-width) {
     grid-column: 2/-1;
     grid-row: 1/3;
   }
@@ -142,7 +155,7 @@ $programs-side-indent: 87px;
   }
 
   @media (min-width: v.$desktop-width) {
-    align-self: start;
+    margin-bottom: 267px;
   }
 }
 

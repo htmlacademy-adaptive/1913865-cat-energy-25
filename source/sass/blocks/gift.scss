@@ -5,10 +5,14 @@
   padding: 1px;
 
   background-color: v.$basic-color;
-  background-image: linear-gradient(to top, v.$basic-color, v.$basic-color), url("../img/gift-cat.jpg");
+  background-image: linear-gradient(to top, rgba(v.$basic-color, 0.85), rgba(v.$basic-color, 0.85)), url("../img/gift-cat.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgba(v.$basic-color, 0.85), rgba(v.$basic-color, 0.85)), url("../img/gift-cat@2x.jpg");
+  }
 
   @media (min-width: v.$tablet-width) {
     display: flex;
@@ -20,6 +24,12 @@
     margin-bottom: 76px;
     min-height: 200px;
     padding: 57px 124px 60px 77px;
+
+    background-image: linear-gradient(to top, rgba(v.$basic-color, 0.85), rgba(v.$basic-color, 0.85)), url("../img/gift-cat-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba(v.$basic-color, 0.85), rgba(v.$basic-color, 0.85)), url("../img/gift-cat-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: v.$desktop-width) {
@@ -27,6 +37,12 @@
     height: 100%;
     margin: 0;
     padding: 0;
+
+    background-image: linear-gradient(to top, rgba(v.$basic-color, 0.85), rgba(v.$basic-color, 0.85)), url("../img/gift-cat.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba(v.$basic-color, 0.85), rgba(v.$basic-color, 0.85)), url("../img/gift-cat@2x.jpg");
+    }
   }
 
   &::before {
@@ -38,7 +54,7 @@
     margin-top: 59px;
     margin-bottom: 48px;
 
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/icons/gift.svg");
     background-repeat: no-repeat;
 
     @media (min-width: v.$tablet-width) {
