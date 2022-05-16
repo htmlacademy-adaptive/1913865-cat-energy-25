@@ -1,3 +1,5 @@
+@use "../variables.scss" as v;
+
 .map__inner {
   position: relative;
   overflow: hidden;
@@ -23,4 +25,29 @@
   position: relative;
   border: none;
   margin-bottom: -4px;
+
+  background-image: url("../img/map.jpg");
+  background-size: contain;
+  height: 362px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x.jpg");
+  }
+
+  @media (min-width: v.$tablet-width) {
+    height: 400px;
+    background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
+  }
 }
