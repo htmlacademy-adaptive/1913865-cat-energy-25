@@ -42,6 +42,11 @@ $programs-side-indent: 87px;
     background: initial;
     color: v.$black;
   }
+
+  @media (min-width: v.$desktop-width) {
+    margin-top: 83px;
+    margin-left: calc($programs-side-indent - 7px);
+  }
 }
 
 .programs__title {
@@ -81,12 +86,16 @@ $programs-side-indent: 87px;
   @media (min-width: v.$tablet-width) {
     width: 420px;
     margin: 0;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
 
 
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-bottom: 49px;
   }
 }
 
@@ -96,13 +105,15 @@ $programs-side-indent: 87px;
   height: 270px;
   margin: 0 auto;
   margin-top: -135px;
+  margin-bottom: 3px;
 
   @media (min-width: v.$tablet-width) {
     position: relative;
     z-index: -1;
     width: 709px;
     height: 609px;
-    margin-top: -100px;
+    margin-bottom: 0;
+    margin-top: -103px;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -148,14 +159,27 @@ $programs-side-indent: 87px;
   text-transform: uppercase;
   color: v.$white;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(v.$white, 0.3);
+  }
+
   @media (min-width: v.$tablet-width) {
-    width: max-content;
+    width: 244px;
+    min-width: unset;
     min-height: 54px;
-    margin-left: $programs-side-indent;
+    margin-left: calc($programs-side-indent + 3px);
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: v.$desktop-width) {
     margin-bottom: 267px;
+    margin-left: calc($programs-side-indent - 7px);
   }
 }
 

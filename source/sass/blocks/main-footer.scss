@@ -14,21 +14,29 @@
     align-items: center;
 
     padding: 0 v.$tablet-side-indent;
-    padding-top: 58px;
-    padding-bottom: 54px;
+    padding-top: 46px;
+    padding-bottom: 44px;
   }
 
   @media (min-width: v.$desktop-width) {
     padding: 0 v.$desktop-side-indent;
-    padding-top: 57px;
-    padding-bottom: 58px;
+    padding-top: 45px;
+    padding-bottom: 46px;
   }
 }
 
 .main-footer__logo {
   display: block;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
+
+  :hover {
+    opacity: 0.8;
+  }
+
+  :active {
+    opacity: 0.6;
+  }
 
   @media (min-width: v.$tablet-width) {
     margin: 0;

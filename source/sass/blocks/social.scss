@@ -7,13 +7,47 @@
   justify-content: center;
 
   @media (max-width: v.$mobile-only-width) {
-    margin-bottom: 28px;
+    margin-bottom: 22px;
 
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
   }
+
+  @media (min-width: v.$tablet-width) {
+    padding-left: 23px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-left: 28px;
+  }
 }
 
 .social__item {
-  padding: 23px 15px;
+  padding: 0 12px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+  @media (min-width: v.$tablet-width) {
+    padding-top: 17px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-top: 15px;
+  }
+}
+
+.social__link {
+  display: block;
+
+  svg {
+    color: #666666;
+
+    &:hover {
+      color: v.$basic-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

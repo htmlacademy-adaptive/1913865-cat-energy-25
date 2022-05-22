@@ -1,7 +1,7 @@
 @use "../variables.scss" as v;
 
 .main-card {
-  padding: 30px 33px 21px 20px;
+  padding: 30px 20px 21px 20px;
   background-color: v.$secondary-color;
 
   @media (min-width: v.$tablet-width) {
@@ -25,6 +25,7 @@
   @media (min-width: v.$tablet-width) {
     width: 57%;
     margin-left: 0;
+    margin-bottom: 25px;
 
     font-size: 36px;
     line-height: 36px;
@@ -39,7 +40,7 @@
 
 .main-card__description {
   margin: 0;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
   margin-bottom: 19px;
 
   font-family: "Arial", system-ui;
@@ -48,6 +49,7 @@
 
   @media (min-width: v.$tablet-width) {
     width: 57%;
+    margin-bottom: 31px;
 
     font-size: 16px;
     line-height: 24px;
@@ -57,13 +59,14 @@
 
   @media (min-width: v.$desktop-width) {
     width: 100%;
-    margin-bottom: 27px;
+    margin-bottom: 8px;
   }
 }
 
 .main-card__link {
   display: flex;
   align-items: center;
+  padding-bottom: 2px;
 
   font-family: "Oswald", system-ui;
   font-size: 16px;
@@ -71,8 +74,13 @@
   text-transform: uppercase;
   color: v.$black;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: v.$tablet-width) {
     width: 55%;
+    padding-bottom: 0;
 
     font-size: 20px;
     line-height: 30px;
@@ -81,12 +89,34 @@
   &::after {
     content: "";
     display: block;
-    width: 47px;
+    width: 41px;
     height: 10px;
 
     background-position: 95% 50%;
     background-repeat: no-repeat;
     background-image: url("../img/icons/arrow.svg");
+
+    @media (min-width: v.$tablet-width) {
+      width: 51px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      width: 55px;
+    }
+  }
+
+  &:hover::after {
+    width: 49px;
+
+    background-image: url("../img/icons/arrow-long.svg");
+
+    @media (min-width: v.$tablet-width) {
+      width: 59px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      width: 63px;
+    }
   }
 }
 

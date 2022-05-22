@@ -2,11 +2,16 @@
 
 .rangebar {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   min-width: 210px;
-  padding-top: 15px;
-  padding-bottom: 40px;
+  padding-top: 19px;
+  padding-bottom: 46px;
+
+  @media (min-width: v.$tablet-width) {
+    padding-top: 29px;
+    padding-bottom: 60px;
+  }
 }
 
 .rangebar__controls {
@@ -16,7 +21,9 @@
   width: 86px;
   height: 14px;
   margin: 0 13px;
+  margin-top: 2px;
   padding: 4px 6px;
+  flex-shrink: 0;
 
   appearance: none;
   cursor: pointer;
@@ -42,6 +49,7 @@
     background-color: v.$basic-color;
 
     @media (min-width: v.$tablet-width) {
+      top: 1px;
       height: 6px;
       background-color: #dcdcdc;
     }
@@ -68,6 +76,15 @@
       border: 1px solid #cdcdcd;
       box-shadow: inset 0 0 0 12.5px v.$white;
       filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+
+      &:hover {
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+      }
+
+      &:active {
+        border-color: v.$basic-color;
+        filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+      }
     }
   }
 
@@ -102,6 +119,7 @@
 .rangebar__button {
   display: block;
   min-width: 49px;
+  padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -115,5 +133,25 @@
   @media (min-width: v.$tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    border-bottom: 1px dotted rgba(v.$black, 0.24);
+
+    &:hover {
+      border-bottom-style: solid;
+      border-color: rgba(v.$black, 0.4);
+    }
+
+    &:active {
+      border-color: transparent;
+    }
   }
 }
+
+.rangebar__button-before {
+  margin-left: 9px;
+}
+
+.rangebar__button-after {
+  margin-right: 7px;
+}
+

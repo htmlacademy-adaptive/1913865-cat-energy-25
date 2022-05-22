@@ -7,13 +7,15 @@
   background-color: v.$white;
 
   @media (min-width: v.$tablet-width) {
-    padding: 56px 70px;
+    padding: 60px 70px;
   }
 
   @media (min-width: v.$desktop-width) {
     width: 565px;
     min-height: 198px;
-    padding: 56px 80px;
+    padding: 57px 0;
+    padding-left: 80px;
+    padding-right: 75px;
   }
 }
 
@@ -42,6 +44,8 @@
 
 .cooperation__address {
   width: 139px;
+
+  font-style: normal;
   line-height: 20px;
   color: v.$special-text;
 
@@ -49,10 +53,15 @@
     width: 160px;
 
     font-size: 16px;
+    direction: rtl;
 
     span {
       display: block;
       margin-top: 1em;
     }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    direction: ltr;
   }
 }

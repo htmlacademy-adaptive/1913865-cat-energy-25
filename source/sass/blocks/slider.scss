@@ -11,12 +11,23 @@
 }
 
 .slider__slide {
+  position: relative;
+  left: -10px;
   overflow: hidden;
+
+  @media (min-width: v.$tablet-width) {
+    position: unset;
+    left: unset;
+  }
 
   &-left {
     .slider__content {
       position: relative;
       left: 10px;
+
+      @media (min-width: v.$tablet-width) {
+        left: 0;
+      }
     }
   }
 
@@ -30,16 +41,20 @@
     .slider__content {
       position: relative;
       left: 10px;
+
+      @media (min-width: v.$tablet-width) {
+        left: 0;
+      }
     }
   }
 }
 
 .slider__content {
   display: block;
-  width: min-content;
+  width: 280px;
+  height: 232px;
 
   @media (min-width: v.$tablet-width) {
-    //Временное решение, пока не будет адаптивных картинок
     width: 592px;
     height: 511px;
   }

@@ -34,6 +34,7 @@
   @media (min-width: v.$desktop-width) {
     padding-left: v.$desktop-side-indent;
     padding-right: v.$desktop-side-indent;
+    padding-top: 47px;
   }
 }
 
@@ -51,7 +52,7 @@
 
 .main-form__advice {
   display: block;
-  // width: ;
+  width: 90%;
   margin-bottom: 39px;
 
   font-family: "Oswald", system-ui;
@@ -60,7 +61,7 @@
 
   @media (min-width: v.$tablet-width) {
     width: 325px;
-    margin-bottom: 66px;
+    margin-bottom: 68px;
 
     font-size: 20px;
     line-height: 30px;

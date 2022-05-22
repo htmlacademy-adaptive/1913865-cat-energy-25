@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0 v.$mobile-side-indent;
   padding-top: 27px;
-  padding-bottom: 41px;
+  padding-bottom: 40px;
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #ebebeb;
@@ -22,7 +22,7 @@
 
   @media (min-width: v.$tablet-width) {
     padding: 0 v.$tablet-side-indent;
-    padding-bottom: 18px;
+    padding-bottom: 21px;
 
     border: none;
 
@@ -31,6 +31,7 @@
   }
 
   @media (min-width: v.$desktop-width) {
+    padding-top: 49px;
     padding-left: v.$desktop-side-indent;
     padding-right: v.$desktop-side-indent;
   }

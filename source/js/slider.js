@@ -15,6 +15,7 @@ if (window.matchMedia("(max-width: 767px)").matches) {
   range.disabled = true;
   targetSlideLeft.style.width = "100%";
   targetSlideRight.style.width = "0%";
+  range.value = "42";
 }
 
 window.addEventListener('resize', function() {
@@ -26,7 +27,7 @@ window.addEventListener('resize', function() {
     targetSlideRight.style.width = "50%";
   } else {
     range.disabled = true;
-    range.value = "50";
+    range.value = "42";
     range.style.setProperty('--left-offset', "0%");
     targetSlideLeft.style.width = "100%";
     targetSlideRight.style.width = "0%";
@@ -53,7 +54,7 @@ rangeButtonAfter.addEventListener('click', (event) => {
     targetSlideRight.style.width = max + "%";
   } else {
     //Свойтсво для мобильной верссии. Смещение в крайнее правое положение
-    range.style.setProperty('--left-offset', "50%");
+    range.style.setProperty('--left-offset', "58%");
     targetSlideLeft.style.width = "0%";
     targetSlideRight.style.width = "100%";
   }
