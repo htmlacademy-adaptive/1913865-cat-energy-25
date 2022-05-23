@@ -552,8 +552,16 @@
 
 .programs-form__phone-img {
   position: absolute;
-  top: 17px;
+  top: 13px;
   right: 13px;
+
+  @media (min-width: v.$tablet-width) {
+    top: 17px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    top: 15px;
+  }
 
   color: #222222;
 }
