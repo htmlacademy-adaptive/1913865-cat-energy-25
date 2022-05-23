@@ -14,20 +14,22 @@
 
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-1-desktop.svg" width="70" height="59">
-          <source media="(min-width: 768px)" srcset="img/logos/cat-energy-1-tablet.svg" width="60" height="50">
-          <img class="main-header__logo-image" src="img/logos/cat-energy-1.svg" width="34" height="38" alt="Интернет-магазин Кэт Энерджи">
-        </picture>
-      </a>
-      <a class="main-header__logo-text" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-2-tablet.svg" width="118" height="21">
-          <source media="(min-width: 768px)" srcset="img/logos/cat-energy-2-tablet.svg" width="101" height="19">
-          <img class="main-header__logo-text-image" src="img/logos/cat-energy-2.svg" width="101" height="19" alt="Логотип Кэт Энерджи">
-        </picture>
-      </a>
+      <div class="main-header__logo-wrapper">
+        <a class="main-header__logo" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-1-desktop.svg" width="70" height="59">
+            <source media="(min-width: 768px)" srcset="img/logos/cat-energy-1-tablet.svg" width="60" height="50">
+            <img class="main-header__logo-image" src="img/logos/cat-energy-1.svg" width="34" height="38" alt="Интернет-магазин Кэт Энерджи">
+          </picture>
+        </a>
+        <a class="main-header__logo-text" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-2-tablet.svg" width="118" height="21">
+            <source media="(min-width: 768px)" srcset="img/logos/cat-energy-2-tablet.svg" width="101" height="19">
+            <img class="main-header__logo-text-image" src="img/logos/cat-energy-2.svg" width="101" height="19" alt="Логотип Кэт Энерджи">
+          </picture>
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="vissually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
@@ -54,9 +56,9 @@
               <div class="product-catalog__card card">
                 <div class="card__image-wrapper">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/product-1-desktop.png, img/catalog/product-1-desktop@2x.png 2x" width="172" height="196">
-                    <source media="(min-width: 768px)" srcset="img/catalog/product-1-tablet.png, img/catalog/product-1-tablet@2x.png 2x" width="168" height="200">
-                    <img class="card__image" src="img/catalog/product-1.png" srcset="img/catalog/product-1@2x.png 2x" width="140" height="112" alt="Товар">
+                    <source media="(min-width: 1440px)" srcset="img/catalog/product-1-desktop.png 1x, img/catalog/product-1-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog/product-1-tablet.png 1x, img/catalog/product-1-tablet@2x.png 2x" width="168" height="200">
+                    <img class="card__image" src="img/catalog/product-1.png" srcset="img/catalog/product-1@2x.png 2x alt="Товар">
                   </picture>
                 </div>
                 <h3 class="card__title">
@@ -78,18 +80,18 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link order-link" href="#">Заказать</a>
+                <a class="card__link order-link" href="product.html">Заказать</a>
               </div>
             </li>
             <li class="product-catalog__item">
               <div class="product-catalog__card card">
                 <div class="card__image-wrapper">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/product-2-desktop.png, img/catalog/product-2-desktop@2x.png 2x" width="172" height="196">
-                    <source media="(min-width: 768px)" srcset="img/catalog/product-2-tablet.png, img/catalog/product-2-tablet@2x.png 2x" width="168" height="200">
+                    <source media="(min-width: 1440px)" srcset="img/catalog/product-2-desktop.png 1x, img/catalog/product-2-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog/product-2-tablet.png 1x, img/catalog/product-2-tablet@2x.png 2x" width="168" height="200">
                     <img class="card__image" src="img/catalog/product-2.png" srcset="img/catalog/product-2@2x.png 2x" width="140" height="112" alt="Товар">
                   </picture>
-                </div c>
+                </div>
                 <h3 class="card__title">
                   Cat Energy PRO 1000 г
                 </h3>
@@ -109,15 +111,15 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link order-link" href="#">Заказать</a>
+                <a class="card__link order-link" href="product.html">Заказать</a>
               </div>
             </li>
             <li class="product-catalog__item">
               <div class="product-catalog__card card">
                 <div class="card__image-wrapper">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/product-3-desktop.png, img/catalog/product-3-desktop@2x.png 2x" width="172" height="196">
-                    <source media="(min-width: 768px)" srcset="img/catalog/product-3-tablet.png, img/catalog/product-3-tablet@2x.png 2x" width="168" height="200">
+                    <source media="(min-width: 1440px)" srcset="img/catalog/product-3-desktop.png 1x, img/catalog/product-3-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog/product-3-tablet.png 1x, img/catalog/product-3-tablet@2x.png 2x" width="168" height="200">
                     <img class="card__image" src="img/catalog/product-3.png" srcset="img/catalog/product-3@2x.png 2x" width="140" height="112" alt="Товар">
                   </picture>
                 </div>
@@ -140,17 +142,16 @@
                         <td class="product-description__cell">700 Р.</td>
                       </tr>
                     </tbody>
-                  </tbody>
                 </table>
-                <a class="card__link order-link" href="#">Заказать</a>
+                <a class="card__link order-link" href="product.html">Заказать</a>
               </div>
             </li>
             <li class="product-catalog__item">
               <div class="product-catalog__card card">
                 <div class="card__image-wrapper">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/product-4-desktop.png, img/catalog/product-4-desktop@2x.png 2x" width="172" height="196">
-                    <source media="(min-width: 768px)" srcset="img/catalog/product-4-tablet.png, img/catalog/product-4-tablet@2x.png 2x" width="168" height="200">
+                    <source media="(min-width: 1440px)" srcset="img/catalog/product-4-desktop.png 1x, img/catalog/product-4-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog/product-4-tablet.png 1x, img/catalog/product-4-tablet@2x.png 2x" width="168" height="200">
                     <img class="card__image" src="img/catalog/product-4.png" srcset="img/catalog/product-4@2x.png 2x" width="140" height="112" alt="Товар">
                   </picture>
                 </div>
@@ -173,15 +174,15 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link order-link" href="#">Заказать</a>
+                <a class="card__link order-link" href="product.html">Заказать</a>
               </div>
             </li>
             <li class="product-catalog__item">
               <div class="product-catalog__card card">
                 <div class="card__image-wrapper">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/product-5-desktop.png, img/catalog/product-5-desktop@2x.png 2x" width="172" height="196">
-                    <source media="(min-width: 768px)" srcset="img/catalog/product-5-tablet.png, img/catalog/product-5-tablet@2x.png 2x" width="168" height="200">
+                    <source media="(min-width: 1440px)" srcset="img/catalog/product-5-desktop.png 1x, img/catalog/product-5-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog/product-5-tablet.png 1x, img/catalog/product-5-tablet@2x.png 2x" width="168" height="200">
                     <img class="card__image" src="img/catalog/product-5.png" srcset="img/catalog/product-5@2x.png 2x" width="140" height="112" alt="Товар">
                   </picture>
                 </div>
@@ -204,15 +205,15 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link order-link" href="#">Заказать</a>
+                <a class="card__link order-link" href="product.html">Заказать</a>
               </div>
             </li>
             <li class="product-catalog__item">
               <div class="product-catalog__card card">
                 <div class="card__image-wrapper">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/product-6-desktop.png, img/catalog/product-6-desktop@2x.png 2x" width="172" height="196">
-                    <source media="(min-width: 768px)" srcset="img/catalog/product-6-tablet.png, img/catalog/product-6-tablet@2x.png 2x" width="168" height="200">
+                    <source media="(min-width: 1440px)" srcset="img/catalog/product-6-desktop.png 1x, img/catalog/product-6-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog/product-6-tablet.png 1x, img/catalog/product-6-tablet@2x.png 2x" width="168" height="200">
                     <img class="card__image" src="img/catalog/product-6.png" srcset="img/catalog/product-6@2x.png 2x" width="140" height="112" alt="Товар">
                   </picture>
                 </div>
@@ -235,18 +236,18 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link order-link" href="#">Заказать</a>
+                <a class="card__link order-link" href="product.html">Заказать</a>
               </div>
             </li>
             <li class="product-catalog__item">
               <div class="product-catalog__card card">
                 <div class="card__image-wrapper">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/product-7-desktop.png, img/catalog/product-7-desktop@2x.png 2x" width="172" height="196">
-                    <source media="(min-width: 768px)" srcset="img/catalog/product-7-tablet.png, img/catalog/product-7-tablet@2x.png 2x" width="168" height="200">
+                    <source media="(min-width: 1440px)" srcset="img/catalog/product-7-desktop.png 1x, img/catalog/product-7-desktop@2x.png 2x" width="172" height="196">
+                    <source media="(min-width: 768px)" srcset="img/catalog/product-7-tablet.png 1x, img/catalog/product-7-tablet@2x.png 2x" width="168" height="200">
                     <img class="card__image" src="img/catalog/product-7.png" srcset="img/catalog/product-7@2x.png 2x" width="140" height="112"   alt="Товар">
                   </picture>
-                </div c>
+                </div>
                 <h3 class="card__title">
                   Cat Energy SLIM 500 г
                 </h3>
@@ -266,7 +267,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card__link order-link" href="#">Заказать</a>
+                <a class="card__link order-link" href="product.html">Заказать</a>
               </div>
             </li>
             <li class="product-catalog__item">
@@ -296,7 +297,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card-additional__link order-link" href="#">Заказать</a>
+                <a class="card-additional__link order-link" href="product.html">Заказать</a>
               </div>
             </li>
             <li class="product-catalog__item">
@@ -312,7 +313,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card-additional__link order-link" href="#">Заказать</a>
+                <a class="card-additional__link order-link" href="product.html">Заказать</a>
               </div>
             </li>
             <li class="product-catalog__item">
@@ -328,7 +329,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card-additional__link order-link" href="#">Заказать</a>
+                <a class="card-additional__link order-link" href="product.html">Заказать</a>
               </div>
             </li>
             <li class="product-catalog__item">
@@ -344,7 +345,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <a class="card-additional__link order-link" href="#">Заказать</a>
+                <a class="card-additional__link order-link" href="product.html">Заказать</a>
               </div>
             </li>
           </ul>
@@ -360,13 +361,13 @@
           Сотрудничество
         </h2>
         <p class="cooperation__description">
-          Приглашаем к сотрудничеству дилеров!
+          Приглашаем<br>к сотрудничеству дилеров!
         </p>
         <address class="cooperation__address">
           ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
         </address>
       </aside>
-      <section class="map"> <!--Пока не знаю как это правильно делается, на этом этапе пока сделал так-->
+      <section class="map">
         <div class="map__inner">
           <a class="map__link" href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps">
             Санкт‑Петербург
@@ -374,12 +375,12 @@
           <a class="map__link-place" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&utm_medium=mapframe&utm_source=maps&z=16.74">
             Большая Конюшенная улица, 19/8 — Яндекс Карты
           </a>
-          <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/-/CCUEYCGZpC" width="100%" height="362px" frameborder="1" allowfullscreen="true"></iframe>
+          <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/-/CCUEYCGZpC"></iframe>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <img class="main-footer__logo" src="img/logos/cat-energy-2.svg" width="128" height="24" alt="Интернет-магазин Кэт Энерджи">
+      <a class="main-footer__logo" href="index.html"><img src="img/logos/cat-energy-2.svg" width="128" height="24" alt="Интернет-магазин Кэт Энерджи"></a>
       <div class="main-footer__social social">
         <p class="vissually-hidden">
           Наши социальные сети:
@@ -390,8 +391,8 @@
               <span class="vissually-hidden">
                 Вконтакте
               </span>
-              <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 5.3388c0-.855.5151-1.3161 1.5453-1.3832l3.9699.0252c.2664 0 .444.1257.5328.3772.4085 1.2574.866 2.343 1.3721 3.2567.5063.9136 1.168 1.9657 1.985 3.156.071.1509.1865.2263.3463.2263.1244 0 .2221-.0586.2931-.176l.0799-.2766.0267-4.3506c0-.3018-.0755-.503-.2265-.6036-.151-.1006-.4307-.176-.8393-.2263-.3197-.0503-.4795-.2347-.4795-.5533 0-.067.0088-.1173.0266-.1508.373-1.0898 1.4387-1.6346 3.1972-1.6346L14.3216 3c.675 0 1.2345.1593 1.6785.4778.4441.3186.6661.8215.6661 1.5089v5.7086c.1244.0838.2398.1257.3464.1257.2664 0 .4973-.1509.6927-.4527 1.9539-2.5818 3.0107-4.3086 3.1706-5.1804 0-.0168.0177-.0587.0532-.1258.1244-.2515.3286-.4694.6128-.6538.2842-.1844.5329-.3102.7461-.3772.071-.0336.1509-.0503.2397-.0503h4.1297l.2665.0251c.3552 0 .6305.1593.8259.4778a.912.912 0 0 1 .1466.327c.0266.1173.0444.2347.0532.352.0089.1174.0134.1844.0134.2012v.176c-.1244.6874-.4397 1.4209-.9459 2.2005-.5062.7796-1.1501 1.622-1.9316 2.5274-.7815.9053-1.27 1.5004-1.4654 1.7855-.1598.2011-.2398.3856-.2398.5532 0 .1341.0711.285.2132.4527l3.8899 4.6272c.2131.2682.3197.5616.3197.8802 0 .3856-.1599.7041-.4796.9556-.3197.2515-.7016.394-1.1456.4275l-.453.0252h-4.0497c-.0178 0-.0533.0041-.1066.0125-.0533.0084-.0888.0126-.1066.0126-.3908 0-.7549-.1593-1.0924-.4778-.1243-.1341-.9591-1.1233-2.5044-2.9675-.0888-.1173-.2132-.2263-.373-.3269-.0711.2683-.1643.6539-.2798 1.1568-.1154.503-.1998.8634-.2531 1.0814l-.0799.4275c-.1776.5868-.5507.9388-1.119 1.0562l-.373.0252h-2.6111c-1.4742 0-2.944-.6371-4.4094-1.9113-1.4654-1.2742-2.7843-2.9213-3.9566-4.9416-1.1723-2.0202-2.2646-4.3715-3.277-7.054C1.0443 5.8502 1 5.607 1 5.3389Zm16.0126 6.5133c-.373 0-.7105-.0964-1.0125-.2892-.3019-.1928-.4529-.4569-.4529-.7922v-5.784c0-.3353-.0888-.5742-.2664-.7167-.1776-.1425-.4885-.2138-.9325-.2138l-1.5187.0503c-.7638 0-1.341.1258-1.7318.3772.7815.3521 1.1723.9221 1.1723 1.71v4.4261c-.0355.4192-.2132.767-.5329 1.0437-.3197.2766-.6749.4149-1.0657.4149-.5329 0-.9414-.2431-1.2256-.7293-1.3854-1.9783-2.4157-3.856-3.0906-5.6331l-.2398-.6539L2.572 5.037c-.231 0-.3597.0126-.3864.0377-.0266.0252-.04.0964-.04.2138 0 .1509.0178.3101.0534.4778l.5595 1.4083c1.492 3.638 3.1128 6.5049 4.8623 8.6005 1.7496 2.0957 3.4681 3.1435 5.1555 3.1435h2.6643c.1066 0 .1865-.0293.2398-.088.0533-.0587.0977-.1718.1332-.3395l.0533-.2515.5063-2.213c.142-.3017.2664-.5029.373-.6035.1953-.1844.4263-.2766.6927-.2766.4263 0 .8614.243 1.3055.7292l2.2647 2.716c.1421.218.2931.3269.4529.3269h4.3961c.5329 0 .7993-.1257.7993-.3772 0-.0838-.0266-.1676-.0799-.2515l-3.8633-4.5517c-.3019-.3521-.4529-.7293-.4529-1.1317s.1421-.788.4263-1.1568c.2309-.3353.6794-.8927 1.3455-1.6723.6661-.7796 1.2478-1.509 1.7451-2.1879.4974-.679.826-1.2951.9858-1.8484l.0799-.3269c-.0177-.0335-.0266-.088-.0266-.1635 0-.0754-.0089-.1383-.0266-.1886h-4.183c-.2665.1006-.4796.2515-.6395.4527l-.1598.4778c-.4441 1.1568-1.6075 2.9423-3.4903 5.3565-.373.3353-.8082.503-1.3055.503Z" fill="#666"/>
+              <svg width="28" height="22">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
@@ -400,8 +401,8 @@
               <span class="vissually-hidden">
                 Ютуб
               </span>
-              <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="m17.8509 10.7927-5.2364-3.4909a.6545.6545 0 0 0-1.0145.5455v6.9818a.6544.6544 0 0 0 .3491.5782.643.643 0 0 0 .3373.0764.6429.6429 0 0 0 .3281-.1091l5.2364-3.4909a.6546.6546 0 0 0 0-1.091Zm-4.9418 2.8146V9.0691l3.4036 2.2691-3.4036 2.2691Zm12.48-8.5636a2.4002 2.4002 0 0 0-1.4509-1.6364C20.2182 1.9782 14.2509 2 14 2c-.2509 0-6.2182-.0218-9.9382 1.4073A2.4 2.4 0 0 0 2.611 5.0437C2.3273 6.1127 2 8.0764 2 11.3382s.3273 5.2255.611 6.2945a2.4002 2.4002 0 0 0 1.4508 1.6364c3.72 1.4291 9.6873 1.4073 9.9382 1.4073h.0764c.7527 0 6.3163-.0437 9.8618-1.4073a2.4 2.4 0 0 0 1.4509-1.6364C25.6727 16.5637 26 14.6 26 11.3382s-.3273-5.2255-.6109-6.2945Zm-1.2655 12.2618a1.0906 1.0906 0 0 1-.6545.7418c-3.4909 1.3418-9.4036 1.32-9.4691 1.32-.0655 0-5.9782.0218-9.469-1.32a1.0904 1.0904 0 0 1-.6546-.7418c-.2619-1.0037-.5673-2.8473-.5673-5.9673 0-3.12.3054-4.9636.5673-5.9673a1.0909 1.0909 0 0 1 .6545-.7418c3.491-1.3418 9.4036-1.32 9.4691-1.32.0655 0 5.9782-.0218 9.4691 1.32a1.0915 1.0915 0 0 1 .6545.7418c.2619 1.0037.5673 2.8473.5673 5.9673 0 3.12-.3054 4.9636-.5673 5.9673Z" fill="#666"/>
+              <svg width="28" height="22">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
@@ -410,8 +411,8 @@
               <span class="vissually-hidden">
                 Телеграм
               </span>
-              <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4608 3.153a.6565.6565 0 0 1 .2264.6115l-2.6261 15.7569a.6564.6564 0 0 1-1.0118.4383l-7.8785-5.2523a.6566.6566 0 0 1-.1485-.9564l2.6107-3.2633-4.36 2.9067a.6566.6566 0 0 1-.6578.0409L4.363 10.8092a.6566.6566 0 0 1 .0728-1.2056l18.3831-6.5653a.6566.6566 0 0 1 .642.1146ZM6.3263 10.3227l3.5354 1.7677 7.5614-5.041a.6565.6565 0 0 1 .8769.9564l-4.805 6.0062 6.4378 4.2918 2.2755-13.6533-15.882 5.6722Z" fill="#666"/>
+              <svg width="28" height="22">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
@@ -420,8 +421,8 @@
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__link-text">HTML Academy</span>
-          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+          <svg width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>

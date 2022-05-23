@@ -4,9 +4,7 @@
   font-weight: 400;
   color: v.$special-text;
 
-  @media (min-width: v.$tablet-width) {
-    border-spacing: 0;
-  }
+  border-spacing: 0;
 }
 
 .product-description__body {
@@ -19,6 +17,8 @@
   }
 
   td {
+    // padding-right: 5px;
+
     text-align: right;
   }
 
@@ -28,12 +28,19 @@
 }
 
 .product-description__cell {
-  @media (min-width: v.$tablet-width) {
-    padding: 0;
+  font-size: 12px;
+  line-height: 16px;
 
+  padding: 0;
+
+  @media (min-width: v.$tablet-width) {
     font-size: 16px;
-    line-height: 36px;
+    line-height: 30px;
     border: 0;
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-bottom: 0.5px;
   }
 }

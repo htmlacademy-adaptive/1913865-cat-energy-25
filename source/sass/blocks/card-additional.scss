@@ -1,8 +1,8 @@
 @use "../variables.scss" as v;
 
 .card-additional {
-  padding-top: 13px;
-  padding-bottom: 19px;
+  padding-top: 12.5px;
+  padding-bottom: 18.5px;
 
   @media (min-width: v.$tablet-width) {
     display: grid;
@@ -10,7 +10,7 @@
 
     padding: 0 38px;
     padding-top: 26px;
-    padding-bottom: 28px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -18,7 +18,7 @@
     grid-template-columns: 35% auto 244px;
     padding: 0;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
   }
 }
 
@@ -48,7 +48,7 @@
 
 .card-additional__table {
   width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 
   @media (min-width: v.$tablet-width) {
     margin-bottom: unset;
@@ -57,7 +57,7 @@
     text-align: right;
 
     td {
-      min-width: 90px;
+      min-width: 93px;
     }
   }
 
@@ -72,5 +72,6 @@
   @media (min-width: v.$desktop-width) {
     width: 244px;
     grid-column: auto;
+    margin-bottom: 1px;
   }
 }

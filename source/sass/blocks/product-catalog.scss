@@ -30,7 +30,7 @@
 
   @media (min-width: v.$tablet-width) {
     margin: unset;
-    $product-catalog__card-margin: 145px;
+    $product-catalog__card-margin: 141.5px;
     margin-top: $product-catalog__card-margin;
     min-height: calc(100% - $product-catalog__card-margin);
   }
@@ -47,13 +47,13 @@
 
   @media (min-width: v.$tablet-width) {
     margin: unset;
-    $product-catalog__card-margin: 145px;
+    $product-catalog__card-margin: 141.5px;
     margin-top: $product-catalog__card-margin;
     min-height: calc(100% - $product-catalog__card-margin);
   }
 
-  @media (min-width: v.$tablet-width) {
-    $product-catalog__card-margin: 145px;
+  @media (min-width: v.$desktop-width) {
+    $product-catalog__card-margin: 143px;
     margin-top: $product-catalog__card-margin;
     min-height: calc(100% - $product-catalog__card-margin);
   }
@@ -119,7 +119,7 @@
   display: flex;
   width: calc(100% + v.$mobile-side-indent);
   margin-top: 25px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 
   font-family: "Oswald", system-ui;
   font-weight: 400;
@@ -149,8 +149,8 @@
     display: block;
     flex-grow: 1;
     min-width: 30px;
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 22px;
+    margin-top: 14px;
     height: 2px;
 
     background-color: v.$basic-color;
@@ -164,7 +164,7 @@
   @media (min-width: v.$tablet-width) {
     width: calc(100% - 36px + v.$tablet-side-indent);
     margin-left: 36px;
-    margin-top: 68px;
+    margin-top: 67px;
     margin-bottom: 80px;
 
     font-size: 36px;
@@ -182,7 +182,7 @@
 
 .product-catalog__gift {
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 34px;
   margin-bottom: 35px;
 
   @media (min-width: v.$tablet-width) {

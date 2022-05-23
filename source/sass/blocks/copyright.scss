@@ -1,3 +1,5 @@
+@use "../variables.scss" as v;
+
 .copyright__link {
   display: flex;
   justify-content: space-between;
@@ -6,9 +8,36 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+
+  &:hover {
+    svg {
+      color: v.$basic-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .copyright__link-text {
   display: block;
   margin-right: 22px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-right: 23px;
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-bottom: 0;
+  }
 }
