@@ -1,0 +1,1 @@
+let cooperationStyle=document.querySelector(".cooperation");window.matchMedia("(min-width: 1440px)").matches&&cooperationStyle.classList.remove("cooperation--dark"),window.addEventListener("resize",(function(){window.matchMedia("(min-width: 1440px)").matches?cooperationStyle.classList.remove("cooperation--dark"):cooperationStyle.classList.add("cooperation--dark")}));
