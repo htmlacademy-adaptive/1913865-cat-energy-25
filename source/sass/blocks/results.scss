@@ -3,20 +3,20 @@
 $column-gap-mobile: 11px;
 $column-gap-tablet: 14px;
 
-
 .results {
   border-spacing: $column-gap-mobile 0;
 
   td {
     top: 11px;
+
     padding-top: 14px;
+
+    text-transform: uppercase;
 
     border: 1px solid #cdcdcd;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-bottom: none;
-
-    text-transform: uppercase;
   }
 
   th {
@@ -34,6 +34,7 @@ $column-gap-tablet: 14px;
 
 .results__cell {
   position: relative;
+
   width: 50%;
 
   &:first-child {
@@ -56,17 +57,18 @@ $column-gap-tablet: 14px;
 .results__cell-info {
   position: relative;
   bottom: -15px;
+
   display: block;
-  margin: 0 auto;
   width: 75%;
+  margin: 0 auto;
 
   text-align: center;
   background-color: #eaeaea;
 
   span {
     display: block;
-    margin: 0 auto;
     width: min-content;
+    margin: 0 auto;
 
     @media (min-width: v.$tablet-width) {
       width: auto;
@@ -74,9 +76,10 @@ $column-gap-tablet: 14px;
   }
 
   @media (min-width: v.$tablet-width) {
+    bottom: -7px;
+
     width: max-content;
     padding: 0 8px;
-    bottom: -7px;
     padding-top: 13px;
 
     background-color: v.$white;
@@ -107,7 +110,7 @@ $column-gap-tablet: 14px;
 }
 
 .results__body {
-  font-family: "Oswald", system-ui;
+  font-family: "Oswald", system-ui, sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-align: center;

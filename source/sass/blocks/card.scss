@@ -2,11 +2,10 @@
 
 .card {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 0 v.$mobile-side-indent;
   padding-top: 19px;
   padding-bottom: 24px;
-
-  grid-template-columns: 1fr 1fr;
 
   @media (min-width: v.$tablet-width) {
     display: flex;
@@ -27,9 +26,9 @@
 
 .card__image {
   display: block;
-  margin: 0 auto;
   width: 140px;
   height: 112px;
+  margin: 0 auto;
 
   @media (min-width: v.$tablet-width) {
     width: 168px;
@@ -51,14 +50,14 @@
 }
 
 .card__title {
+  width: 60%;
   margin: 0;
   margin-bottom: 15px;
-  width: 60%;
 
-  font-family: "Oswald", system-ui;
+  font-family: "Oswald", system-ui, sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #222222;
 

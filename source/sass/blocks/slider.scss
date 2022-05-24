@@ -2,8 +2,9 @@
 
 .slider__wrapper {
   position: relative;
-  margin: 0 auto;
+
   width: 280px;
+  margin: 0 auto;
 
   @media (min-width: v.$tablet-width) {
     width: 592px;
@@ -13,6 +14,7 @@
 .slider__slide {
   position: relative;
   left: -10px;
+
   overflow: hidden;
 
   @media (min-width: v.$tablet-width) {

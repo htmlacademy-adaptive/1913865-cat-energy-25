@@ -17,8 +17,6 @@
   }
 
   td {
-    // padding-right: 5px;
-
     text-align: right;
   }
 
@@ -28,14 +26,15 @@
 }
 
 .product-description__cell {
+  padding: 0;
+
   font-size: 12px;
   line-height: 16px;
-
-  padding: 0;
 
   @media (min-width: v.$tablet-width) {
     font-size: 16px;
     line-height: 30px;
+
     border: 0;
     border-bottom: 1px solid #cdcdcd;
   }

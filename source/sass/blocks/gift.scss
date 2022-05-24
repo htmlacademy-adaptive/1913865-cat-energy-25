@@ -20,9 +20,9 @@
     align-items: center;
 
     max-width: unset;
+    min-height: 200px;
     margin-top: 69px;
     margin-bottom: 76px;
-    min-height: 200px;
     padding: 57px 124px 60px 77px;
 
     background-image: linear-gradient(to top, rgba(v.$basic-color, 0.85), rgba(v.$basic-color, 0.85)), url("../img/gift-cat-tablet.jpg");
@@ -76,10 +76,10 @@
   width: 60%;
   margin: 0 auto;
 
-  font-family: "Arial", system-ui;
+  font-family: "Arial", system-ui, sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
+  font-weight: 400;
   text-align: center;
   color: v.$white;
 

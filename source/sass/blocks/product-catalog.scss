@@ -29,16 +29,18 @@
   margin: 0 auto;
 
   @media (min-width: v.$tablet-width) {
-    margin: unset;
     $product-catalog__card-margin: 141.5px;
-    margin-top: $product-catalog__card-margin;
+
     min-height: calc(100% - $product-catalog__card-margin);
+    margin: unset;
+    margin-top: $product-catalog__card-margin;
   }
 
   @media (min-width: v.$desktop-width) {
     $product-catalog__card-margin: 143px;
-    margin-top: $product-catalog__card-margin;
+
     min-height: calc(100% - $product-catalog__card-margin);
+    margin-top: $product-catalog__card-margin;
   }
 }
 
@@ -46,16 +48,18 @@
   margin: 0 auto;
 
   @media (min-width: v.$tablet-width) {
-    margin: unset;
     $product-catalog__card-margin: 141.5px;
-    margin-top: $product-catalog__card-margin;
+
+    margin: unset;
     min-height: calc(100% - $product-catalog__card-margin);
+    margin-top: $product-catalog__card-margin;
   }
 
   @media (min-width: v.$desktop-width) {
     $product-catalog__card-margin: 143px;
-    margin-top: $product-catalog__card-margin;
+
     min-height: calc(100% - $product-catalog__card-margin);
+    margin-top: $product-catalog__card-margin;
   }
 }
 
@@ -115,25 +119,29 @@
 
 .product-catalog__subtitle {
   box-sizing: content-box;
+
   position: relative;
+
   display: flex;
   width: calc(100% + v.$mobile-side-indent);
   margin-top: 25px;
   margin-bottom: 34px;
 
-  font-family: "Oswald", system-ui;
-  font-weight: 400;
+  font-family: "Oswald", system-ui, sans-serif;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
 
   &::before {
     @media (min-width: v.$tablet-width) {
       content: "";
-      display: block;
+
       position: absolute;
       top: 23px;
       left: -68px;
       right: calc(100% + 36px);
+
+      display: block;
       height: 2px;
 
       background-color: v.$basic-color;
@@ -146,12 +154,13 @@
 
   &::after {
     content: "";
+
     display: block;
-    flex-grow: 1;
     min-width: 30px;
+    height: 2px;
     margin-left: 22px;
     margin-top: 14px;
-    height: 2px;
+    flex-grow: 1;
 
     background-color: v.$basic-color;
 
@@ -175,7 +184,6 @@
     width: calc(100% + v.$desktop-side-indent);
     margin-top: 75px;
     margin-left: 0;
-
     grid-column: 1/-1;
   }
 }

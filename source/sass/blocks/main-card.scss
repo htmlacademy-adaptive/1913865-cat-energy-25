@@ -2,6 +2,7 @@
 
 .main-card {
   padding: 30px 20px 21px 20px;
+
   background-color: v.$secondary-color;
 
   @media (min-width: v.$tablet-width) {
@@ -14,10 +15,10 @@
   margin-bottom: 30px;
   margin-left: 71px;
 
-  font-family: "Oswald", system-ui;
-  font-weight: 400;
+  font-family: "Oswald", system-ui, sans-serif;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   text-transform: uppercase;
 
   color: v.$black;
@@ -40,11 +41,12 @@
 
 .main-card__description {
   margin: 0;
-  padding-bottom: 20px;
   margin-bottom: 19px;
+  padding-bottom: 20px;
 
-  font-family: "Arial", system-ui;
+  font-family: "Arial", system-ui, sans-serif;
   color: v.$special-text;
+
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: v.$tablet-width) {
@@ -54,6 +56,7 @@
     font-size: 16px;
     line-height: 24px;
     color: v.$black;
+
     border: none;
   }
 
@@ -68,7 +71,7 @@
   align-items: center;
   padding-bottom: 2px;
 
-  font-family: "Oswald", system-ui;
+  font-family: "Oswald", system-ui, sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -91,6 +94,7 @@
     display: block;
     width: 41px;
     height: 10px;
+    flex-shrink: 0;
 
     background-position: 95% 50%;
     background-repeat: no-repeat;
@@ -125,10 +129,12 @@
 
   &::before {
     content: "";
-    display: block;
+
     position: absolute;
     top: 24px;
     left: 22px;
+
+    display: block;
     width: 50px;
     height: 50px;
 
@@ -139,6 +145,7 @@
       left: unset;
       top: 92px;
       right: 62px;
+
       width: 200px;
       height: 200px;
     }
@@ -147,6 +154,7 @@
       right: unset;
       top: 47px;
       left: 52px;
+
       width: 100px;
       height: 100px;
     }
@@ -154,10 +162,12 @@
 
   &::after {
     content: "";
-    display: block;
+
     position: absolute;
     top: 21px;
     left: 28px;
+
+    display: block;
     width: 36px;
     height: 50px;
 
@@ -170,6 +180,7 @@
       left: unset;
       top: 81px;
       right: 91px;
+
       width: 140px;
       height: 194px;
     }
@@ -178,6 +189,7 @@
       right: unset;
       top: 41px;
       left: 67px;
+
       width: 70px;
       height: 97px;
     }
@@ -189,10 +201,12 @@
 
   &::before {
     content: "";
-    display: block;
+
     position: absolute;
     top: 24px;
     left: 22px;
+
+    display: block;
     width: 50px;
     height: 50px;
 
@@ -203,6 +217,7 @@
       left: unset;
       top: 91px;
       right: 60px;
+
       width: 200px;
       height: 200px;
     }
@@ -211,6 +226,7 @@
       right: unset;
       top: 47px;
       left: 52px;
+
       width: 100px;
       height: 100px;
     }
@@ -218,10 +234,13 @@
 
   &::after {
     content: "";
-    display: block;
+
     position: absolute;
+
+    display: block;
     top: 35px;
     left: 13px;
+
     width: 67px;
     height: 28px;
 
@@ -234,6 +253,7 @@
       left: unset;
       top: 135px;
       right: 28px;
+
       width: 268px;
       height: 112px;
     }
@@ -242,6 +262,7 @@
       right: unset;
       left: 33px;
       top: 67px;
+
       width: 134px;
       height: 56px;
     }

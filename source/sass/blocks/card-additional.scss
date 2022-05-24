@@ -7,7 +7,6 @@
   @media (min-width: v.$tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     padding: 0 38px;
     padding-top: 26px;
     padding-bottom: 27px;
@@ -26,10 +25,10 @@
   margin: 0;
   margin-bottom: 13px;
 
-  font-family: "Oswald", system-ui;
-  font-weight: 400;
+  font-family: "Oswald", system-ui, sans-serif;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #222222;
 
@@ -51,9 +50,10 @@
   margin-bottom: 15px;
 
   @media (min-width: v.$tablet-width) {
-    margin-bottom: unset;
     width: auto;
+    margin-bottom: unset;
     margin-left: auto;
+
     text-align: right;
 
     td {
