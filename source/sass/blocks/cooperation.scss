@@ -22,6 +22,10 @@
 
 .cooperation--dark {
   background-color: #f2f2f2;
+
+  @media (min-width: v.$desktop-width) {
+    background-color: v.$white;
+  }
 }
 
 .cooperation__description {
