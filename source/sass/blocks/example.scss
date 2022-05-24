@@ -21,10 +21,10 @@
   margin: 0;
   margin-bottom: 40px;
 
-  font-family: "Oswald", system-ui;
-  font-weight: 400;
+  font-family: "Oswald", system-ui, sans-serif;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 
   @media (min-width: v.$tablet-width) {
     grid-column: 1/-1;
@@ -81,9 +81,9 @@
   display: block;
   margin-bottom: 40px;
 
-  font-family: "Oswald", system-ui;
-  font-weight: 400;
+  font-family: "Oswald", system-ui, sans-serif;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 
@@ -102,6 +102,7 @@
 
   @media (min-width: v.$desktop-width) {
     margin-bottom: 75px;
+
     text-align: start;
 
     span {
@@ -117,8 +118,9 @@
   margin: 0 auto;
 
   @media (min-width: v.$tablet-width) {
-    grid-column: 1/-1;
     position: relative;
+
+    grid-column: 1/-1;
   }
 
   @media (min-width: v.$desktop-width) {

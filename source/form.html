@@ -2,6 +2,7 @@
   <html class="page" lang="ru">
 
     <head>
+      <link rel="preload" href="./fonts/oswaldregular.woff2" as="font">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <title>HTML Academy: Кэт энерджи</title>
@@ -17,23 +18,25 @@
     <body class="page__body">
       <header class="main-header">
         <div class="main-header__logo-wrapper">
-          <a class="main-header__logo" href="#">
+          <a class="main-header__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-1-desktop.svg" width="70" height="59">
-              <source media="(min-width: 768px)" srcset="img/logos/cat-energy-1-tablet.svg" width="60" height="50">
-              <img class="main-header__logo-image" src="img/logos/cat-energy-1.svg" width="34" height="38" alt="Интернет-магазин Кэт Энерджи">
+              <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-1-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logos/cat-energy-1-tablet.svg">
+              <img class="main-header__logo-image" src="img/logos/cat-energy-1.svg" alt="Интернет-магазин Кэт Энерджи">
             </picture>
           </a>
-          <a class="main-header__logo-text" href="#">
+          <a class="main-header__logo-text" href="index.html" tabindex="-1">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-2-tablet.svg" width="118" height="21">
-              <source media="(min-width: 768px)" srcset="img/logos/cat-energy-2-tablet.svg" width="101" height="19">
-              <img class="main-header__logo-text-image" src="img/logos/cat-energy-2.svg" width="101" height="19" alt="Логотип Кэт Энерджи">
+              <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-2-tablet.svg">
+              <source media="(min-width: 768px)" srcset="img/logos/cat-energy-2-tablet.svg">
+              <img class="main-header__logo-text-image" src="img/logos/cat-energy-2.svg" alt="Логотип Кэт Энерджи">
             </picture>
           </a>
         </div>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="vissually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle" type="button">
+            <span class="vissually-hidden">Переключить меню</span>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html">Главная</a>
@@ -65,13 +68,15 @@
                   <span class="programs-form__field-label">
                     Имя:*
                   </span>
-                  <input class="programs-form__field-control input input--required" type="text" placeholder="Барсик" name="name" required>
+                  <input class="programs-form__field-control input input--required" type="text" placeholder="Барсик"
+                    name="name" required>
                 </label>
                 <label class="programs-form__field">
                   <span class="programs-form__field-label">
                     Вес (кг):*
                   </span>
-                  <input class="programs-form__field-control input input--required" type="number" placeholder="7" name="weight" required>
+                  <input class="programs-form__field-control input input--required" type="number" placeholder="7"
+                    name="weight" required>
                 </label>
                 <label class="programs-form__field">
                   <span class="programs-form__field-label">
@@ -85,21 +90,24 @@
                   Тип программы
                 </legend>
                 <label class="programs-form__field programs-form__field--event">
-                  <input class="vissually-hidden programs-form__field-radio input input--radio" type="radio" name="type-of-program" value="weight-loss" checked>
+                  <input class="vissually-hidden programs-form__field-radio input input--radio" type="radio"
+                    name="type-of-program" value="weight-loss" checked>
                   <span class="programs-form__radio-mark"></span>
                   <span class="programs-form__field-label programs-form__field-label--radio">
                     Похудение
                   </span>
                 </label>
                 <label class="programs-form__field programs-form__field--event">
-                  <input class="vissually-hidden programs-form__field-radio input input--radio" type="radio" name="type-of-program" value="weight-gain">
+                  <input class="vissually-hidden programs-form__field-radio input input--radio" type="radio"
+                    name="type-of-program" value="weight-gain">
                   <span class="programs-form__radio-mark"></span>
                   <span class="programs-form__field-label programs-form__field-label--radio">
                     Набор массы
                   </span>
                 </label>
                 <label class="programs-form__field programs-form__field--event">
-                  <input class="vissually-hidden programs-form__field-radio input input--radio" type="radio" name="type-of-program" value="need-advice">
+                  <input class="vissually-hidden programs-form__field-radio input input--radio" type="radio"
+                    name="type-of-program" value="need-advice">
                   <span class="programs-form__radio-mark"></span>
                   <span class="programs-form__field-label programs-form__field-label--radio">
                     Не знаю (нужен ваш совет)
@@ -115,8 +123,9 @@
                 <span class="programs-form__field-label">
                   e-mail:*
                 </span>
-                <input class="programs-form__field-control input input--required" type="email" placeholder="kuklachev@gmail.com" name="email" required>
-                <svg class="programs-form__mail-img" width="19" height="14">
+                <input class="programs-form__field-control input input--required" type="email"
+                  placeholder="kuklachev@gmail.com" name="email" required>
+                <svg class="programs-form__mail-img" width="19" height="14" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#mail"></use>
                 </svg>
               </label>
@@ -124,8 +133,9 @@
                 <span class="programs-form__field-label">
                   Телефон:*
                 </span>
-                <input class="programs-form__field-control input input--required" type="tel" placeholder="8 (960) 900-60-90" name="tel" required>
-                <svg class="programs-form__phone-img" width="20" height="21">
+                <input class="programs-form__field-control input input--required" type="tel"
+                  placeholder="8 (960) 900-60-90" name="tel" required>
+                <svg class="programs-form__phone-img" width="20" height="21" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
               </label>
@@ -135,7 +145,8 @@
                 Комментарий
               </legend>
               <label class="programs-form__field">
-                <textarea class="programs-form__field-textarea textarea" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
+                <textarea class="programs-form__field-textarea textarea" placeholder="Расскажите обо всех повадках кота"
+                  name="comment"></textarea>
               </label>
             </fieldset>
             <fieldset class="programs-form__fieldset programs-form__fieldset-additional">
@@ -143,28 +154,32 @@
                 Дополнительно
               </legend>
               <label class="programs-form__field programs-form__field-additional programs-form__field--event">
-                <input class="vissually-hidden programs-form__field-checkbox input input--checkbox" type="checkbox" name="additionally" value="sweetener" checked>
+                <input class="vissually-hidden programs-form__field-checkbox input input--checkbox" type="checkbox"
+                  name="additionally" value="sweetener" checked>
                 <span class="programs-form__checkbox-mark"></span>
                 <span class="programs-form__field-label programs-form__field-label--checkbox">
                   Сахарозаменитель
                 </span>
               </label>
               <label class="programs-form__field programs-form__field-additional programs-form__field--event">
-                <input class="vissually-hidden programs-form__field-checkbox input--checkbox input" type="checkbox" name="additionally" value="drinking-water">
+                <input class="vissually-hidden programs-form__field-checkbox input--checkbox input" type="checkbox"
+                  name="additionally" value="drinking-water">
                 <span class="programs-form__checkbox-mark"></span>
                 <span class="programs-form__field-label programs-form__field-label--checkbox">
                   Питьевая вода
                 </span>
               </label>
               <label class="programs-form__field programs-form__field-additional programs-form__field--event">
-                <input class="vissually-hidden programs-form__field-checkbox input--checkbox input" type="checkbox" name="additionally" value="milk">
+                <input class="vissually-hidden programs-form__field-checkbox input--checkbox input" type="checkbox"
+                  name="additionally" value="milk">
                 <span class="programs-form__checkbox-mark"></span>
                 <span class="programs-form__field-label programs-form__field-label--checkbox">
                   Молоко
                 </span>
               </label>
               <label class="programs-form__field programs-form__field-additional programs-form__field--event">
-                <input class="vissually-hidden programs-form__field-checkbox input input--checkbox" type="checkbox" name="additionally" value="vitamins">
+                <input class="vissually-hidden programs-form__field-checkbox input input--checkbox" type="checkbox"
+                  name="additionally" value="vitamins">
                 <span class="programs-form__checkbox-mark"></span>
                 <span class="programs-form__field-label programs-form__field-label--checkbox">
                   Витамины
@@ -172,7 +187,7 @@
               </label>
             </fieldset>
             <div class="programs-form__button-wrapper">
-              <button class="programs-form__field-send button" type="submit">Отправить заявку</button>
+              <button class="programs-form__field-send" type="submit">Отправить заявку</button>
               <span class="programs-form__tip">
                 * — Обязательные поля
               </span>
@@ -190,12 +205,14 @@
             ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
           </address>
         </aside>
-        <section class="map"> <!--Пока не знаю как это правильно делается, на этом этапе пока сделал так-->
+        <section class="map">
+          <h2 class="vissually-hidden">Магазин на карте</h2>
           <div class="map__inner">
             <a class="map__link" href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps">
               Санкт‑Петербург
             </a>
-            <a class="map__link-place" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&utm_medium=mapframe&utm_source=maps&z=16.74">
+            <a class="map__link-place"
+              href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&utm_medium=mapframe&utm_source=maps&z=16.74">
               Большая Конюшенная улица, 19/8 — Яндекс Карты
             </a>
             <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/-/CCUEYCGZpC"></iframe>
@@ -203,7 +220,9 @@
         </section>
       </main>
       <footer class="main-footer">
-        <a class="main-footer__logo" href="index.html"><img src="img/logos/cat-energy-2.svg" width="128" height="24" alt="Интернет-магазин Кэт Энерджи"></a>
+        <a class="main-footer__logo" href="index.html">
+          <img src="img/logos/cat-energy-2.svg" width="128" height="24" alt="Интернет-магазин Кэт Энерджи">
+        </a>
         <div class="main-footer__social social">
           <p class="vissually-hidden">
             Наши социальные сети:
@@ -214,7 +233,8 @@
                 <span class="vissually-hidden">
                   Вконтакте
                 </span>
-                <svg width="28" height="22">
+                <svg width="28" height="22" role="img">
+                  <title>Логотип соцсети Вконтакте</title>
                   <use xlink:href="img/sprite.svg#vkontakte"></use>
                 </svg>
               </a>
@@ -224,7 +244,8 @@
                 <span class="vissually-hidden">
                   Ютуб
                 </span>
-                <svg width="28" height="22">
+                <svg width="28" height="22" role="img">
+                  <title>Логотип видеохостинга Ютуб</title>
                   <use xlink:href="img/sprite.svg#youtube"></use>
                 </svg>
               </a>
@@ -234,7 +255,8 @@
                 <span class="vissually-hidden">
                   Телеграм
                 </span>
-                <svg width="28" height="22">
+                <svg width="28" height="22" role="img">
+                  <title>Логотип соцсети телеграм</title>
                   <use xlink:href="img/sprite.svg#telegram"></use>
                 </svg>
               </a>
@@ -244,7 +266,8 @@
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__link-text">HTML Academy</span>
-            <svg width="27" height="34">
+            <svg width="27" height="34" role="img">
+              <title>Логотип компании HTML Academy</title>
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>

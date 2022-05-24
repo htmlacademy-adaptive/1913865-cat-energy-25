@@ -8,7 +8,9 @@
 
   @media (max-width: v.$mobile-only-width) {
     position: relative;
-    padding-bottom: 13px;
+
+    padding-bottom: 9px;
+    margin-bottom: 4px;
   }
 
   @media (min-width: v.$tablet-width) {
@@ -28,6 +30,21 @@
   margin-top: 10px;
 }
 
+.main-header__logo-image {
+  width: 34px;
+  height: 38px;
+
+  @media (min-width: v.$tablet-width) {
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 70px;
+    height: 59px;
+  }
+}
+
 .main-header__logo-text {
   width: min-content;
   padding-right: 19px;
@@ -44,6 +61,16 @@
   @media (min-width: v.$desktop-width) {
     padding-top: 31px;
     margin-left: 13px;
+  }
+}
+
+.main-header__logo-text-image {
+  width: 101px;
+  height: 19px;
+
+  @media (min-width: v.$desktop-width) {
+    width: 118px;
+    height: 21px;
   }
 }
 

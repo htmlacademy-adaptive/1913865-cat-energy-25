@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 
   <head>
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
@@ -19,21 +20,23 @@
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo" href="#">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-1-desktop.svg" width="70" height="59">
-            <source media="(min-width: 768px)" srcset="img/logos/cat-energy-1-tablet.svg" width="60" height="50">
-            <img class="main-header__logo-image" src="img/logos/cat-energy-1.svg" width="34" height="38" alt="Интернет-магазин Кэт Энерджи">
+            <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-1-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logos/cat-energy-1-tablet.svg">
+            <img class="main-header__logo-image" src="img/logos/cat-energy-1.svg" alt="Интернет-магазин Кэт Энерджи">
           </picture>
         </a>
-        <a class="main-header__logo-text" href="#">
+        <a class="main-header__logo-text" href="#" tabindex="-1">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-2-tablet.svg" width="118" height="21">
-            <source media="(min-width: 768px)" srcset="img/logos/cat-energy-2-tablet.svg" width="101" height="19">
-            <img class="main-header__logo-text-image" src="img/logos/cat-energy-2.svg" width="101" height="19" alt="Логотип Кэт Энерджи">
+            <source media="(min-width: 1440px)" srcset="img/logos/cat-energy-2-tablet.svg">
+            <source media="(min-width: 768px)" srcset="img/logos/cat-energy-2-tablet.svg">
+            <img class="main-header__logo-text-image" src="img/logos/cat-energy-2.svg" alt="Логотип Кэт Энерджи">
           </picture>
         </a>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="vissually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="vissually-hidden">Переключить меню</span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current main-nav__item--index">
             <a href="#">Главная</a>
@@ -65,8 +68,10 @@
         </div>
         <div class="programs__image-wrapper">
           <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/main-can-desktop.webp 1x, img/main-can-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/main-can-tablet.webp 1x, img/main-can-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/main-can-desktop.webp 1x, img/main-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/main-can-tablet.webp 1x, img/main-can-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/main-can.webp 1x, img/main-can@2x.webp 2x">
 
             <source media="(min-width: 1440px)" srcset="img/main-can-desktop.png 1x, img/main-can-desktop@2x.png 2x">
@@ -133,16 +138,21 @@
         </h2>
         <p class="example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
+          в день.
         </p>
         <table class="example__results results">
           <thead class="results__head">
             <tr>
               <th class="results__cell">
-                <div class="results__cell-info"><span>снижение веса</span></div>
+                <div class="results__cell-info">
+                  <span>снижение веса</span>
+                </div>
               </th>
               <th class="results__cell">
-                <div class="results__cell-info"><span>затрачено времени</span></div>
+                <div class="results__cell-info">
+                  <span>затрачено времени</span>
+                </div>
               </th>
             </tr>
           </thead>
@@ -160,28 +170,34 @@
           <div class="slider__wrapper">
             <div class="slider__slide slider__slide-left" style="width: 50%;">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/cat-before.webp 1x, img/cat-before@2x.webp 2x" alt="Полная кошка">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-before.webp 1x, img/cat-before@2x.webp 2x">
 
                 <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
-                <img class="slider__content" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" alt="Полная кошка">
+                <img class="slider__content" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x"
+                  alt="Полная кошка">
               </picture>
             </div>
             <div class="slider__slide slider__slide-right" style="width: 50%;">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/cat-after.webp 1x, img/cat-after@2x.webp 2x" alt="Полная кошка">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-after.webp 1x, img/cat-after@2x.webp 2x">
 
                 <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
                 <img class="slider__content" src="img/cat-after.png" srcset="img/cat-after@2x.png 2x" alt="Худая кошка">
               </picture>
             </div>
             <div class="slider__rangebar rangebar">
-              <button class="rangebar__button rangebar__button-before" type="button">
+              <button class="rangebar__button rangebar__button-before" type="button" aria-label="Изначальное положение слайдера">
                 Было
               </button>
-              <input class="rangebar__controls" type="range" min="0" max="100" value="50">
-              <button class="rangebar__button rangebar__button-after" type="button">
+              <label>
+                <span class="vissually-hidden">Полоса диапазона для слайдера</span>
+                <input class="rangebar__controls" type="range" min="0" max="100" value="50" tabindex="-1">
+              </label>
+              <button class="rangebar__button rangebar__button-after" type="button" aria-label="Конечное положение слайдера">
                 Стало
               </button>
             </div>
@@ -200,11 +216,13 @@
         </address>
       </aside>
       <section class="map">
+        <h2 class="vissually-hidden">Магазин на карте</h2>
         <div class="map__inner">
           <a class="map__link" href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps">
             Санкт‑Петербург
           </a>
-          <a class="map__link-place" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&utm_medium=mapframe&utm_source=maps&z=16.74">
+          <a class="map__link-place"
+            href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&utm_medium=mapframe&utm_source=maps&z=16.74">
             Большая Конюшенная улица, 19/8 — Яндекс Карты
           </a>
           <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/-/CCUEYCGZpC"></iframe>
@@ -212,7 +230,9 @@
       </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer__logo" href="#"><img src="img/logos/cat-energy-2.svg" width="128" height="24" alt="Интернет-магазин Кэт Энерджи"></a>
+      <a class="main-footer__logo" href="#">
+        <img src="img/logos/cat-energy-2.svg" width="128" height="24" alt="Интернет-магазин Кэт Энерджи">
+      </a>
       <div class="main-footer__social social">
         <p class="vissually-hidden">
           Наши социальные сети:
@@ -223,7 +243,8 @@
               <span class="vissually-hidden">
                 Вконтакте
               </span>
-              <svg width="28" height="22">
+              <svg width="28" height="22" role="img">
+                <title>Логотип соцсети Вконтакте</title>
                 <use xlink:href="img/sprite.svg#vkontakte"></use>
               </svg>
             </a>
@@ -233,7 +254,8 @@
               <span class="vissually-hidden">
                 Ютуб
               </span>
-              <svg width="28" height="22">
+              <svg width="28" height="22" role="img">
+                <title>Логотип видеохостинга Ютуб</title>
                 <use xlink:href="img/sprite.svg#youtube"></use>
               </svg>
             </a>
@@ -243,7 +265,8 @@
               <span class="vissually-hidden">
                 Телеграм
               </span>
-              <svg width="28" height="22">
+              <svg width="28" height="22" role="img">
+                <title>Логотип соцсети телеграм</title>
                 <use xlink:href="img/sprite.svg#telegram"></use>
               </svg>
             </a>
@@ -253,7 +276,8 @@
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__link-text">HTML Academy</span>
-          <svg width="27" height="34">
+          <svg width="27" height="34" role="img">
+            <title>Логотип компании HTML Academy</title>
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>

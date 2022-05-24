@@ -4,10 +4,10 @@
   margin: 0;
   margin-bottom: 40px;
 
-  font-family: "Oswald", system-ui;
-  font-weight: 400;
+  font-family: "Oswald", system-ui, sans-serif;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 
   @media (min-width: v.$tablet-width) {
     margin-bottom: 72px;
@@ -29,7 +29,6 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 57px;
-
     margin-bottom: 26px;
   }
 
@@ -45,28 +44,30 @@
 
 .guide__item {
   display: flex;
-  color: v.$special-text;
   margin-bottom: 20px;
+
+  color: v.$special-text;
 
   @media (min-width: v.$tablet-width) {
     position: relative;
-    flex-direction: column;
-    min-height: 240px;
+
     width: 80%;
+    min-height: 240px;
+    flex-direction: column;
 
     font-size: 16px;
     line-height: 24px;
 
-
     @for $i from 1 through 4 {
       &:nth-child(#{$i})::after {
         content: "#{$i}";
+
         position: absolute;
-        z-index: -1;
         right: 13px;
         top: 0;
+        z-index: -1;
 
-        font-family: "Oswald", system-ui;
+        font-family: "Oswald", system-ui, sans-serif;
         font-size: 280px;
         line-height: 205px;
         color: v.$secondary-color;
@@ -95,9 +96,9 @@
   &::before {
     content: "";
     display: block;
+    flex-shrink: 0;
     width: 60px;
     height: 60px;
-    flex-shrink: 0;
     margin-right: 20px;
 
     background-color: v.$basic-color;

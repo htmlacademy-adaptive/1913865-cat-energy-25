@@ -2,13 +2,14 @@
 
 .rangebar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   min-width: 210px;
   padding-top: 19px;
   padding-bottom: 46px;
 
   @media (min-width: v.$tablet-width) {
+    justify-content: space-around;
     padding-top: 29px;
     padding-bottom: 60px;
   }
@@ -25,51 +26,54 @@
   padding: 4px 6px;
   flex-shrink: 0;
 
-  appearance: none;
-  cursor: pointer;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
+
+  appearance: none;
+  cursor: pointer;
   overflow: hidden;
 
   &:disabled {
     background-color: v.$white;
   }
 
-  //По каким то причинам не работает группирование селекторов для этих псевдоэлементов,
-  //поэтому создал миксины чтобы не повторять один и тот же код дважды
-  //могу показать на демонстрации, если нужно, или проверь самостоятельно
-
   @mixin track() {
     position: relative;
     left: var(--left-offset);
-    appearance: none;
+
     height: 6px;
 
     border-radius: 6px;
     background-color: v.$basic-color;
 
+    appearance: none;
+
     @media (min-width: v.$tablet-width) {
       top: 1px;
+
       height: 6px;
+
       background-color: #dcdcdc;
     }
   }
 
   @mixin thumb() {
-    appearance: none;
     width: 6px;
     height: 6px;
+
     border-radius: 6px;
     border: none;
-
     background-color: transparent;
     box-shadow: 46px 0 0 43px v.$white;
 
+    appearance: none;
+
     @media (min-width: v.$tablet-width) {
-      width: 34px;
-      height: 34px;
       position: relative;
       top: -15px;
+
+      width: 34px;
+      height: 34px;
 
       background-color: v.$basic-color;
       border-radius: 50%;
@@ -107,11 +111,12 @@
 
   @media (min-width: v.$tablet-width) {
     width: 426px;
-    padding: 0;
     margin: 0 17px;
+    padding: 0;
 
     border: none;
     background-color: transparent;
+
     overflow: visible;
   }
 }
@@ -120,15 +125,17 @@
   display: block;
   min-width: 49px;
   padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
 
-  font-family: "Oswald", system-ui;
+  font-family: "Oswald", system-ui, sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
 
   @media (min-width: v.$tablet-width) {
     font-size: 20px;
@@ -152,5 +159,9 @@
 }
 
 .rangebar__button-after {
-  margin-right: 7px;
+  margin-right: 9px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-right: 7px;
+  }
 }

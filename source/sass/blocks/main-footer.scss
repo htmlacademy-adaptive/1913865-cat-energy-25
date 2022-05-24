@@ -1,8 +1,8 @@
 @use "../variables.scss" as v;
 
 .main-footer {
-  padding: 0 v.$mobile-side-indent;
   margin-top: auto;
+  padding: 0 v.$mobile-side-indent;
   padding-top: 39px;
   padding-bottom: 22px;
 
@@ -29,7 +29,7 @@
   display: block;
   width: min-content;
   margin: 0 auto;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
 
   :hover {
     opacity: 0.8;

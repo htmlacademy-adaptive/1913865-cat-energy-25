@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: column;
 
+  font-family: "Arial", system-ui, sans-serif;
   font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
-  font-family: "Arial", system-ui;
+  font-weight: 400;
 }
 
 .page__body--index {
@@ -19,6 +19,7 @@
       z-index: -1;
       top: 0;
       right: 0;
+
       width: 50%;
       height: 694px;
 
